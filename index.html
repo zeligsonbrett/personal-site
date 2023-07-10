@@ -7,7 +7,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1MGL4DHXCW"></script>
     <script>
@@ -39,20 +41,36 @@
         <main>
         <h1 id="abt">About Me</h1>
         <p>As a member of the Princeton class of 2024, I am pursuing a Bachelor of Engineering in Computer Science with minors in Statistics & Machine Learning, Finance, Urban Studies, and Architecture/Engineering. I am most interested in opportunities that allow me to merge my interests in finance, real estate, design, media, and architecture with my passion for Computer Science.</p>
+        <br>
         <h1 id="ed">Education</h1>
         <div class="container">
             <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://www.cs.princeton.edu/">
                         <img style="width: 80%" src="pton.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>Princeton University</span></h2> 
-                    <p class="position">BS Computer Science<br><i style="color: gray">Minors in Statistics and Machine Learning, Finance, Urban Studies, and Architecture/Engineering</i><br><span>Anricipated Graduation: May 2024</span></p>
+                    <span class="position">BS Computer Science</span><br>
+                    <i class="minors">Minors in Statistics and Machine Learning, Finance, Urban Studies, and Architecture/Engineering</i><br>
+                    <br><span class="grad">Anticipated Graduation: May 2024</span></p>
                     <ul style="font-size: 1.5vw;">
-                        <li><strong>GPA:</strong> 3.6</li>
-                        <li><strong>Coursework:</strong> Computer Graphics, Computer Vision, Natural Language Processing, Computer Networks, Advanced Programming Techniques, Economics and Computing, Introduction to Machine Learning, Web-App Development, Algorithms and Data Structures, Programming Systems</li>
+                        <li><strong>Major GPA:</strong> 3.7</li>
+                        <li><strong>Overall GPA:</strong> 3.6</li>
+                        <li><strong>Coursework:</strong>
+                        <ul class="course-list"> 
+                            <li>Computer Graphics</li> 
+                            <li>Computer Vision</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Networks</li>
+                            <li>Advanced Programming Techniques</li>
+                            <li>Economics and Computing</li>
+                            <li>Introduction to Machine Learning</li>
+                            <li>Web-App Development</li>
+                            <li>Algorithms and Data Structures</li>
+                            <li>Programming Systems</li>
+                        </ul>
                     </ul>   
                 </div>
             </div>
@@ -244,37 +262,49 @@
         <h1 id="exp">Work Experience</h1>
          <div class="container">
             <div class="row">
-                    <div class="image col-6 align-self-center">
-                        <a target="_blank" href="https://www.nbcuniversal.com/">
-                            <img style="width: 80%" src="NBC_Universal.svg">
+                    <div class="image col-5 align-self-center">
+                        <a target="_blank" href="https://aws.amazon.com/?nc2=h_lg">
+                            <img style="width: 60%" src="aws.png">
                         </a>
                     </div>
-                    <div class="col-6">
-                        <h2 class="text" style="text-align: center"><span>NBCUniversal</span></h2>
-                        <p class="position">Project Coordinator (Previously a Software Engineering Intern)<br><span>(June 2022 - Present)</span></p>
+                    <div class="col-7">
+                        <h2 class="text" style="text-align: center"><span>Amazon Web Services</span></h2>
+                        <p class="position">Software Development Engineer Intern<br><span>May 2023 - Present</span></p>
                         <ul style="font-size: 1.5vw;">
-                            <li>Leading development of three full-stack applications which optimize Rockefeller Center control room operations and increase efficiency of NBC local station operator tasks. (Working with React.js, Node.js, HTML, CSS, Typescript, MongoDB, Linux)</li>
-                            <li>Building out custom Datadog checks using Python to optimize engineering dashboards and increase monitoring capabilities.</li>
-                            <li>Collaborate on a weekly basis with product stakeholders to ensure progress adheres to the needs of future users.</li>
-                            <li>Performed the first tests, enterprise-wide, of the AWS Fault Injection Simulator and presented my work to company leadership.</li>
-                            <li>Troubleshooted various solutions to FIS issues involving IAM, EC2, SSM, RDS, CloudFormation, and CloudWatch.</li>
-                            <li>Built out an application, using Microsoft Powerapps, containing data update, insertion, and deletion functionality, to update an Excel spreadsheet with 500+ data entries.</li>
+                            <li>Developing a new AWS CloudTrail feature which makes querying event data stores more accessible to non-technical users.</li>
+                            <li>Composed a 10-page feature technical design document and led team-wide discussions to gain approval from senior engineers.</li>
+                                
+                    </div>
+                </div>
+                <div class="row">
+                    <p style="visibility: hidden">.</p>
+                </div>
+            <div class="row">
+                    <div class="image col-5 align-self-center">
+                        <a target="_blank" href="https://cdh.princeton.edu/">
+                            <img style="width: 60%" src="cdh.png">
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <h2 class="text" style="text-align: center"><span>Princeton Center for Digital Humanities</span></h2>
+                        <p class="position">Optical Character Recognition Researcher<br><span>March 2023 - Present</span></p>
+                        <ul style="font-size: 1.5vw;">
+                            <li>Train, customize, and evaluate optical character recognition models to extract data from 20th century handwritten logbooks.</li>                          
                         </ul>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <p style="visibility: hidden">.</p>
+                </div>
             <div class="row">
-                <p style="visibility: hidden">.</p>
-            </div>
-            <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://www.princeton.edu/">
                         <img style="width: 80%" src="pton.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>Princeton University</span></h2> 
-                    <p class="position">Residential College Advisor<br><span>(August 2022 - Present)</span></p>
+                    <p class="position">Residential College Advisor<br><span>August 2022 - Present</span></p>
                     <ul style="font-size: 1.5vw;">
                         <li>Mentoring a diverse group of sixteen first-year students.</li>
                         <li>Encouraging holistic personal development, and promoting safety, citizenship, health and wellness to build an inclusive environment.</li>
@@ -286,17 +316,17 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://www.dailyprincetonian.com/">
                         <img style="width: 80%" src="dailyprincetonian.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>The Daily Princetonian</span></h2> 
-                    <p class="position">Head Web Design and Development Editor + Software Engineer<br><span>(September 2021 - Present)</span></p>
+                    <p class="position">Head Web Design and Development Editor + Software Engineer<br><span>September 2021 - Present</span></p>
                     <ul style="font-size: 1.5vw;">
                         <li>Oversee 15 developers, manage project timelines, run meetings, and lead product development to serve 3.8k+ monthly users.</li>
-                        <li>Built the entire front and back-end for a two apps that enable users to subscribe to receiving print and web copies of the newspaper.</li>
+                        <li>Built three full-stack web-apps, along with 10+ web projects, supporting newspaper subscriptions and editorial news quizzes.</li>
                     </ul>   
                 </div>
             </div>
@@ -305,14 +335,14 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://www.cs.princeton.edu/">
                         <img style="width: 80%" src="pton.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>Princeton University Department of Computer Science</span></h2> 
-                    <p class="position">Head Lab Teaching Assistant <br><span>(September 2021 - Present)</span></p>
+                    <p class="position">Head Lab Teaching Assistant <br><span>September 2021 - Present</span></p>
                     <ul style="font-size: 1.5vw;">
                         <li>Manage 50+ teaching assistants across 3 computer science courses, setting expectations and communicating with professors.</li>
                         <li>Help 300+ students debug their Java and C assignment code and answer algorithms, data structures, and systems questions.</li>
@@ -324,14 +354,35 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
+                    <a target="_blank" href="https://www.nbcuniversal.com/">
+                        <img style="width: 80%" src="NBC_Universal.svg">
+                    </a>
+                </div>
+                <div class="col-7">
+                    <h2 class="text" style="text-align: center"><span>NBCUniversal</span></h2>
+                    <p class="position">Project Coordinator (Previously a Software Engineering Intern)<br><span>June 2022 - May 2023</span></p>
+                    <ul style="font-size: 1.5vw;">
+                        <li>Led development, deployment, and documentation of three full-stack React applications which eliminate friction in Rockefeller Center control room operations and were adopted by 150+ NBCU employees across New York, Los Angeles, and London offices.</li>  
+                        <li>Led R&D of custom Datadog dashboards, populated via Python scripts, enhancing enterprise-wide network monitoring, and served as a touchpoint for teams across the company looking to implement similar technologies within their organizations.</li>
+                        <li>Presented IPTV monitoring software recommendations to NBC executives, informed by market research and vendor interviews.</li>
+                        <li>Performed the first tests, enterprise-wide, of the AWS Fault Injection Simulator and presented my work to company leadership.</li>                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p style="visibility: hidden">.</p>
+        </div>
+            <div class="row">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://shreyadixit.org/">
                         <img style="width: 40%" src="Logo1.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>The Shreya Dixit Memorial Foundation</span></h2> 
-                    <p class="position">Marketing Committee Leader <br><span>(June 2021 - August 2022)</span></p>
+                    <p class="position">Marketing Committee Leader <br><span>June 2021 - August 2022</span></p>
                     <ul style="font-size: 1.5vw;">
                         <li>Led, developed, and implemented a six-week plan for the marketing division of the internship program.</li>
                     </ul>   
@@ -341,14 +392,14 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://www.getpupil.com/">
                         <img style="width: 80%" src="pupil.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>Pupil</span></h2> 
-                    <p class="position">Software Engineer <br><span>(May 2022 - October 2022)</span></p>
+                    <p class="position">Software Engineer <br><span>May 2022 - October 2022</span></p>
                     <ul style="font-size: 1.5vw;">
                         <li>Worked in a team of 5 to build the MVP of a full stack Next.js React app (using MongoDB) that matches students with mentors.</li>
                         <li>Placed in charge of building out the password reset and direct messaging features, including all front and backend components.</li>
@@ -359,14 +410,14 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://getborderless.com/">
                         <img style="width: 80%" src="download.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>Borderless</span></h2> 
-                    <p class="position">App Development Intern <br><span>(December 2021 - January 2022)</span></p>
+                    <p class="position">App Development Intern <br><span>December 2021 - January 2022</span></p>
                     <ul style="font-size: 1.5vw;">
                         <li>Built the company a complete and robust REST API Documentation from scratch in accordance with openapi 3.0 standards.</li>
                         <li>Coded conditional rendering of API Documentation elements to adhere to endpoint requirements, improving user experience.</li>
@@ -378,14 +429,14 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://www.getrentcheck.com/">
                         <img style="width: 80%" src="rent.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>RentCheck</span></h2> 
-                    <p class="position">Software Development Intern <br><span>(November 2021 - January 2022)</span></p>
+                    <p class="position">Software Development Intern <br><span>November 2021 - January 2022</span></p>
                     <ul style="font-size: 1.5vw;">
                         <li>Built a new Sign Up feature on the company’s web application. Gained experience using Agile Software Development.</li>
                         <li>Used Jira Software and Bitbucket for team communication and version control. Work with AWS and Google Cloud Platform.</li>       
@@ -396,14 +447,14 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                <div class="image col-6 align-self-center">
+                <div class="image col-5 align-self-center">
                     <a target="_blank" href="https://www.whiting-turner.com/">
                         <img style="width: 80%" src="wt.png">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-7">
                     <h2 class="text" style="text-align: center"><span>The Whiting-Turner Contracting Company</span></h2> 
-                    <p class="position">Engineering Intern <br><span>(June 2021 - August 2021)</span></p>
+                    <p class="position">Engineering Intern <br><span>June 2021 - August 2021</span></p>
                     <ul style="font-size: 1.5vw;">
                         <li>Collaborated with the Virtual Design and Construction team, using BIM software to identify clashes between drawings.</li>
                         <li>Maintained client relationships by producing detailed daily quality and safety reports presented to client representatives.</li>          
@@ -416,14 +467,14 @@
             <h1 id="vol">Service</h1>
          <div class="container">
             <div class="row">
-                    <div class="image col-6 align-self-center">
+                    <div class="image col-5 align-self-center">
                         <a target="_blank" href="https://www.matriculate.org/">
                             <img style="width: 80%" src="m.png">
                         </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-7">
                         <h2 class="text" style="text-align: center"><span>Matriculate</span></h2>
-                        <p class="position">Advising Fellow<br><span>(January 2022 - Present)</span></p>
+                        <p class="position">Advising Fellow<br><span>January 2022 - Present</span></p>
                         <ul style="font-size: 1.5vw;">
                             <li>Mentor three high achieving low-income high school students and help them achieve success in the college admissions process.</li>
                         </ul>
@@ -434,14 +485,14 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                    <div class="image col-6 align-self-center">
+                    <div class="image col-5 align-self-center">
                         <a target="_blank" href="https://clubswim.princeton.edu/">
                             <img style="width: 80%" src="cs.png">
                         </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-7">
                         <h2 class="text" style="text-align: center"><span>Princeton Club Swimming</span></h2>
-                        <p class="position">Co-Captain<br><span>(January 2020 - January 2022)</span></p>
+                        <p class="position">Co-Captain<br><span>January 2020 - January 2022</span></p>
                         <ul style="font-size: 1.5vw;">
                             <li> Redesigned the weekly workout writing process to prioritize creating practices that appeal to swimmers of all abilities.</li>
                         </ul>
@@ -451,14 +502,14 @@
                 <p style="visibility: hidden">.</p>
             </div>
             <div class="row">
-                    <div class="image col-6 align-self-center">
+                    <div class="image col-5 align-self-center">
                         <a target="_blank" href="https://matheycollege.princeton.edu/">
                             <img style="width: 25%" src="mat.png">
                         </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-7">
                         <h2 class="text" style="text-align: center"><span>Mathey College Council</span></h2>
-                        <p class="position">Council Co-Chair<br><span>(September 2020 - May 2022)</span></p>
+                        <p class="position">Council Co-Chair<br><span>September 2020 - May 2022</span></p>
                         <ul style="font-size: 1.5vw;">
                             <li>Conduct bi-weekly council meetings, delegate tasks to council members, and plan study breaks for over 400 students</li>
                         </ul>

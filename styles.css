@@ -44,10 +44,6 @@ nav a:hover{
     background-color: white;
 }
 
-.col{
-
-}
-
 .image{
     text-align: center;
 }
@@ -105,7 +101,9 @@ a:nth-of-type(5):hover{
     padding: 0;
     margin-top: -25px;
 }
-
+.active{
+    color:aqua;
+}
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -179,10 +177,22 @@ a:nth-of-type(5):hover{
   .position{
       color: #C1121F;
       font-weight: bolder;
+      font-size: 1.3em;
   }
 
   .position span{
+    font-size: 1em;
+    color: #FCA311;
+  }
+
+  .grad{
+      font-size: 1.2em;
+      font-weight: 600;
       color: #FCA311;
+  }
+
+  .minors{
+    font-size: 1.2em;
   }
 
   .credit{
@@ -191,6 +201,16 @@ a:nth-of-type(5):hover{
       margin: 30px;
       font-weight: bolder;
       font-size: 2vw;
+  }
+
+  .course-list li{
+    margin-bottom: 0px;
+    padding-top: -20px;
+  }
+  
+  .dropdown-toggle::after {
+    display: inline-block;
+    color: green;
   }
  
   @media screen and (max-width: 1000px){
