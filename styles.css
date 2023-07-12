@@ -261,7 +261,7 @@ li span {
     }
 
     .resume-list {
-        font-size: 2vw;
+        font-size: 2.75vw;
     }
 
     h3 {
@@ -271,6 +271,10 @@ li span {
 
     body {
         width: 90%;
+    }
+
+    .text span {
+        font-size: 4vw;
     }
 }
 
