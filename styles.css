@@ -114,7 +114,7 @@ a:nth-of-type(5):hover{
     color: blue;
   }
 
-  #abt, #ed, #projects, #exp, #vol{
+  #about-me, #education, #projects, #experience, #service{
     font-size: 3vw;
     color: #14213D;
     font-weight: bolder; 
@@ -222,4 +222,9 @@ a:nth-of-type(5):hover{
       .text span{
           font-size: 2.5vw;
       }
+
+      #about-me, #education, #projects, #experience, #service{
+        /* margin-bottom: -20px; */
+      }
   }
+
