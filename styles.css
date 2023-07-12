@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: white;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
+nav {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -20,71 +20,72 @@ nav{
     width: 12%;
 }
 
-main{
+main {
     padding: 20px;
     margin-right: 15%;
     margin-left: 20px;
 }
 
-nav a{
+nav a {
     height: 10px;
     padding-right: 10px;
-    padding-left: 10px; 
+    padding-left: 10px;
     color: black;
     font-size: 2vw;
     font-weight: bolder;
-    text-decoration: none;   
+    text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     font-weight: bolder;
 }
 
-.row{
+.row {
     background-color: white;
 }
 
-.image{
+.image {
     text-align: center;
 }
 
-.text-primary{
+.text-primary {
     color: primary;
 }
 
-h2 .h2 .subtitile{
+h2 .h2 .subtitile {
     color: red;
 }
 
-.subtitile{
+.subtitile {
     color: red;
 }
 
-a:nth-of-type(1):hover{
-    color: #C1121F;
-}
-a:nth-of-type(2):hover{
-    color: #FCA311;
-}
-a:nth-of-type(3):hover{
-    color: #C1121F;
-}
-a:nth-of-type(4):hover{
-    color: #FCA311;
-}
-a:nth-of-type(5):hover{
+a:nth-of-type(1):hover {
     color: #C1121F;
 }
 
-.animate-charcter
-{
-    background-image: linear-gradient(
-    -225deg,
-    #FCA311 0%,
-    #14213D 29%,
-    #C1121F 67%,
-    #000000 100%
-    );
+a:nth-of-type(2):hover {
+    color: #FCA311;
+}
+
+a:nth-of-type(3):hover {
+    color: #C1121F;
+}
+
+a:nth-of-type(4):hover {
+    color: #FCA311;
+}
+
+a:nth-of-type(5):hover {
+    color: #C1121F;
+}
+
+.animate-charcter {
+    background-image: linear-gradient(-225deg,
+            #FCA311 0%,
+            #14213D 29%,
+            #C1121F 67%,
+            #000000 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -101,30 +102,32 @@ a:nth-of-type(5):hover{
     padding: 0;
     margin-top: -25px;
 }
-.active{
-    color:aqua;
+
+.active {
+    color: aqua;
 }
+
 @keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+    to {
+        background-position: 200% center;
+    }
 }
 
-  a svg{
+a svg {
     color: blue;
-  }
+}
 
-  #about-me, #education, #projects, #experience, #service{
+#about-me, #education, #projects, #experience, #service {
     font-size: 3vw;
     color: #14213D;
-    font-weight: bolder; 
-  }
+    font-weight: bolder;
+}
 
-  p{
-      font-size: 1.5vw;
-  }
+p {
+    font-size: 1.5vw;
+}
 
-  .col a svg{
+.col a svg {
     background-color: rgb(212, 212, 244);
     height: 6vw;
     width: 6vw;
@@ -133,98 +136,159 @@ a:nth-of-type(5):hover{
     margin-bottom: 20px;
     border-width: 0;
     border-radius: 10px;
-  }
+}
 
-  .text{
-      font-size: 1.5vw;
-      text-align: right;
-  }
+.text {
+    font-size: 1.5vw;
+    text-align: right;
+}
 
-  .text span{
-      font-size: 2vw;
-      font-weight: bolder;
-  }
+.text span {
+    font-size: 2vw;
+    font-weight: bolder;
+}
 
-  ul li{
-      margin-bottom: 10px;
-  }
+ul li {
+    margin-bottom: 10px;
+}
 
-  li span{
-      color: blue;
-      font-weight: 800;
-      letter-spacing: -5px;
-      margin-right: 9px;
-  }
+li span {
+    color: blue;
+    font-weight: 800;
+    letter-spacing: -5px;
+    margin-right: 9px;
+}
 
-  .link-btn{
-      text-decoration: none;
-      display: inline-block;
-      background-color: #C1121F;
-      color: white;
-      padding: 5px;
-      border-radius: 5px;
-      margin-bottom: 20px; 
-      width: 100%;
-      transition: ease-in-out 0.5s;
-  }
+.link-btn {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #C1121F;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: ease-in-out 0.5s;
+}
 
-  .link-btn:hover{
-      color: white;
-      background-color: #FCA311;
-      transition: ease-in-out 0.5s;
-  }
+.link-btn:hover {
+    color: white;
+    background-color: #FCA311;
+    transition: ease-in-out 0.5s;
+}
 
-  .position{
-      color: #C1121F;
-      font-weight: bolder;
-      font-size: 1.3em;
-  }
+.position {
+    color: #C1121F;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
 
-  .position span{
+.position span {
     font-size: 1em;
     color: #FCA311;
-  }
+}
 
-  .grad{
-      font-size: 1.2em;
-      font-weight: 600;
-      color: #FCA311;
-  }
-
-  .minors{
+.grad {
     font-size: 1.2em;
-  }
+    font-weight: 600;
+    color: #FCA311;
+}
 
-  .credit{
-      width: 100%;
-      text-align: center;
-      margin: 30px;
-      font-weight: bolder;
-      font-size: 2vw;
-  }
+.minors {
+    font-size: 1.2em;
+}
 
-  .course-list li{
+.credit {
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+.course-list li {
     margin-bottom: 0px;
     padding-top: -20px;
-  }
-  
-  .dropdown-toggle::after {
+}
+
+.dropdown-toggle::after {
     display: inline-block;
     color: green;
-  }
- 
-  @media screen and (max-width: 1000px){
-      .text{
+}
+
+.resume-list {
+    font-size: 1.5vw;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .text {
         text-align: left;
         padding-top: 20px;
-      }
+    }
 
-      .text span{
-          font-size: 2.5vw;
-      }
+    .text span {
+        font-size: 2.5vw;
+    }
 
-      #about-me, #education, #projects, #experience, #service{
-        /* margin-bottom: -20px; */
-      }
-  }
+    #about-me, #education, #projects, #experience, #service {
+        font-size: 5vw;
+    }
 
+    #projects {
+        margin-bottom: -30px
+    }
+
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        padding: 20px;
+        margin-left: 20px;
+
+        margin-right: -40px;
+        overflow-y: hidden;
+    }
+
+    .resume-list {
+        font-size: 2vw;
+    }
+
+    h3 {
+        position: relative;
+        top: 30px;
+    }
+
+    body {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .text span {
+        font-size: 5vw;
+    }
+
+    img {
+        display: none;
+    }
+
+    .credit {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .project-cat {
+        line-height: 10vw;
+    }
+}
