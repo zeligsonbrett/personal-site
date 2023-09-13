@@ -37,7 +37,6 @@
     window.onscroll = function () {
         // We add pageYOffset for compatibility with IE.
         if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-            console.log("hi")
             document.getElementById("navbar").classList.add(className);
             let elements = document.getElementsByClassName("link");
             for (let i = 0; i < elements.length; i++) {
