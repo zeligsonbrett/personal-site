@@ -21,7 +21,7 @@ body {
 
 .header{
     height: 110vh;
-    background-image: url("background.jpeg");
+    background-image: url("images/background.jpeg");
     background-size: 100%;
     margin: 0;
     width: 100vw;
@@ -75,6 +75,9 @@ nav span {
     float: right;
 }
 
+nav span a{
+    font-weight: 650;
+}
 nav a {
     height: 10px;
     padding-right: 10px;
@@ -172,7 +175,7 @@ a svg {
     color: blue;
 }
 
-#about-me, #education, #projects, #experience, #service {
+#about-me, #education, #projects, #experience, #leadership {
     font-size: 3vw;
     color: #14213D;
     font-weight: bolder;
@@ -280,6 +283,33 @@ li span {
     display: none;
 }
 
+.sub-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: var(--t);
+    font-size: 1.5vw;
+    flex-wrap: wrap;
+    color: black;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.sub-nav a{
+    background-color: var(--hover);
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    transition: ease 0.6s;
+}
+
+.sub-nav a:hover{
+    background-color: var(--primary);
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    transition: ease 0.6s;
+}
 
 @media screen and (max-width: 1000px) {
     .text {
@@ -291,8 +321,13 @@ li span {
         font-size: 2.5vw;
     }
 
-    #about-me, #education, #projects, #experience, #service {
+    #about-me, #education, #projects, #experience, #leadership {
         font-size: 5vw;
+    }
+
+    .sub-nav{
+        font-size: 2.5vw;
+        margin-top: 0px;
     }
 
     #projects {
