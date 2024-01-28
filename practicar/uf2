@@ -1,0 +1,19 @@
+class UF:
+    def __init__(self):
+        self.parentOf = {}
+
+    def insert(self, value):
+        if value not in self.parentOf:
+            self.parentOf[value] = value
+
+    def find(self, value):
+        while self.parentOf[value] != value:
+            value = self.parentOf[value]
+
+        return value
+    
+    def union(self, value1, value2):
+        root1 = self.find(value1)
+        root2 = self.find(value2)
+
+        self.parentOf[root1] = root2

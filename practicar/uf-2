@@ -1,0 +1,39 @@
+class UF:
+    def __init__(self):
+        self.parentOf = {}
+
+    def parents (self):
+        return self.parentOf
+    
+    def insert(self, new):
+        self.parentOf[new] = new
+        return
+
+    def find(self, curr):
+        while not self.parentOf[curr] == curr:
+            curr = self.parentOf[curr]
+
+        return curr
+
+    def union(self, one, two):
+        parentOne = self.find(one)
+        parentTwo = self.find(two)
+
+        self.parentOf[parentOne] = parentTwo
+
+print('hiiiiii')
+struct = UF()
+print(struct.parents())
+struct.insert("hello")
+struct.insert("bye")
+struct.insert("hi")
+print(struct.parents())
+struct.union("hi", "bye")
+struct.union("hello", "hi")
+
+if struct.find("hi") == struct.find("hello"):
+    print("Connected")
+
+if struct.find("hi") == struct.find("bye"):
+    print("Connected")
+print(struct.parents())
