@@ -5,11 +5,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5FCVF566Y"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-Y5FCVF566Y');
+        gtag('config', 'G-Y5FCVF566Y');
     </script>
     <link rel="stylesheet" href="styles.css">
     <title>Brett Zeligson's Personal Website</title>
@@ -109,12 +109,13 @@
             <span class="nav-link" id="about-me-nav"></span>
             <h1 id="about-me">About Me</h1>
             <p>
-                As a member of the Princeton class of 2024, I am pursuing a Bachelor of Engineering in Computer Science
-                with
-                minors in Statistics & Machine Learning, Finance, Urban Studies, and Architecture/Engineering. I am most
-                interested in opportunities that allow me to merge my interests in finance, real estate, design, media,
-                and
-                architecture with my passion for Computer Science.
+                Currently, in my work as a Software Engineer for Amazon Web Services (AWS), specifically AWS CloudTrail,
+                I develop distributed systems which are
+                highly available, scalable, and reliable in order to serve billions of customer requests every day.
+                Professionally, I am most
+                interested in opportunities that allow me to merge my interests in investigative journalism, urban
+                studies, real estate, and architecture with
+                my passion for Computer Science.
             </p>
         </section>
 
@@ -122,22 +123,15 @@
         <main>
             <span class="nav-link" id="education-nav"></span>
             <h1 id="education">Education</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.cs.princeton.edu/">
-                            <img style="width: 80%" src="images/princeton.png">
-                        </a>
-                    </div>
+            <div>
+                <div class="row experience">
                     <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Princeton University</span></h2>
+                        <h2 class="text" style="text-align: left"><span>Princeton University</span></h2>
                         <span class="position">BSE Computer Science</span><br>
                         <i class="minors">Minors in Statistics and Machine Learning, Finance, Urban Studies, and
                             Architecture/Engineering</i><br>
-                        <p class="position"><span>Anticipated Graduation: May 2024</span></p>
+                        <p class="position"><span>Graduated May 2024</span></p>
                         <ul className="resume-list">
-                            <!-- <li><strong>Major GPA:</strong> 3.7</li>
-                            <li><strong>Overall GPA:</strong> 3.6</li> -->
                             <li><strong>Coursework:</strong>
                                 <ul class="course-list">
                                     <li>Computer Graphics</li>
@@ -153,285 +147,236 @@
                                 </ul>
                         </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+
+                    <div class="image col-lg-5 col-sm-0 align-self-center">
+                        <a target="_blank" href="https://www.cs.princeton.edu/">
+                            <img style="width: 80%" src="images/princeton.png">
+                        </a>
+                    </div>
                 </div>
             </div>
             <span class="nav-link" id="projects-nav"></span>
             <h1 id="projects">Projects</h1>
-            <div class="row">
-                <p style="visibility: hidden">.</p>
-            </div>
+
             <div class="sub-nav">
+                <a href="#research">Research</a>
                 <a href="#full-stack">Full-Stack Web Applications</a>
                 <a href="#daily-prince">The Daily Princetonian</a>
-                <a href="#research">Research Papers</a>
                 <a href="#graphics">Computer Graphics Projects</a>
                 <a href="#ios">IOS Applications</a>
-                <a href="#borderless">Borderless</a>
-                <a href="#rentcheck">RentCheck</a>
             </div>
-            <div class="container">
-                <span class="nav-link" id="full-stack"></span>
-                <div style="margin-top: 50px" class="row">
-                    <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
-                            style="position: relative; top: -10px;">Full-Stack Web Applications</span></div>
-                    <div class="col-sm-12 col-lg-8">
-                        <div class="container-fluid" style="color: white;">
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="http://quizzes.dailyprincetonian.com/" target="_blank"
-                                        style="color: white;" class="link-btn">
-                                        <strong>Daily Princetonian Quizzes App</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://print-subscribe.dailyprincetonian.com" target="_blank"
-                                        style="color: white;" class="link-btn">
-                                        <strong>The Daily Princetonian Print Subscriptions Application</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://subscribe.dailyprincetonian.com" target="_blank"
-                                        style="color: white;" class="link-btn">
-                                        <strong>The Daily Princetonian Subscriptions Application</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://github.com/zeligsonbrett/GrabAGrad" target="_blank"
-                                        style="color: white;" class="link-btn">
-                                        <strong>GrabAGrad</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://www.getpupil.com/" target="_blank" style="color: white;"
-                                        class="link-btn">
-                                        <strong>Pupil</strong>
-                                    </a>
-                                </div>
-                            </div>
+            <span class="nav-link" id="research"></span>
+            <div style="margin-top: 50px" class="row experience">
+                <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
+                        style="position: relative; top: -10px;">Research</span></div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://drive.google.com/file/d/1jVSCPam22YjHBsNIOy40ST8Bn3VagWf5/view?usp=sharing"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>(Senior Thesis) Modeling Socioeconomic Variability Using Geographic
+                                    Factors: A Comparative Study of Network-Based Model Architectures in
+                                    Monocentric and Polycentric Metropolitan Regions</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://drive.google.com/file/d/1wFQ0eWIkbV1HPQ4W_mH5wpjccxXjxWeY/view?usp=sharing"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>Regression Models of Housing Prices Leveraging Broadcast Media
+                                    Sentiment</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://drive.google.com/file/d/1676c6X4JtwRxNEQw9z-dZHmhL_r8kXCP/view?usp=sharing"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>21st Century New York City Construction Sentiment Analysis</strong>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://cdh.princeton.edu/updates/2023/12/06/from-logbook-to-spreadsheet-to/"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>Optical Character Recognition System to Extract 20th Century Handwritten Logbook
+                                    Data</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://drive.google.com/file/d/1aL0zLamx3guruMY3h0oOMmRFGLoKnQ4R/view"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>Netlist Synthesization from Physical Breadboard Circuits</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://drive.google.com/file/d/1QmXY7o_bWHRb6P3S62NSdY_tvrdMFxhq/view?usp=sharing"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>Diagnosing and Debiasing Corpus-Based Political Bias and Insults in
+                                    GPT2</strong>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
-                </div>
-                <span class="nav-link" id="daily-prince"></span>
-                <div class="row">
-                    <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
-                            style="position: relative; top: -10px;">The Daily Princetonian</span></div>
-                    <div class="col-sm-12 col-lg-8">
-                        <div class="container-fluid" style="color: white;">
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/black-history/"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>Black History Issue</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/frosh-survey-2027/"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>Frosh Survey 2027</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/prospect-year-in-review-2022/"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>Prospect Year in Review 2022</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/froshsurvey-26/" target="_blank"
-                                        style="color: white;" class="link-btn">
-                                        <strong>Frosh Survey 2026</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/thank-you-women-princeton-history/"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>Women's History Month Issue</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/commencement-2022/main.html#top"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>Commencement Issue</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/princeton-butler-tract-housing-justice/"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>Housing Justice Issue</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/senior-survey-2023/index.html"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>2023 Senior Survey Issue</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://projects.dailyprincetonian.com/senior-survey-2022/index.html"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>2022 Senior Survey Issue</strong>
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+            <span class="nav-link" id="full-stack"></span>
+            <div class="row experience">
+                <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
+                        style="position: relative; top: -10px;">Full-Stack Web Applications</span></div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="http://quizzes.dailyprincetonian.com/" target="_blank" style="color: white;"
+                                class="link-btn">
+                                <strong>Daily Princetonian Quizzes App</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://print-subscribe.dailyprincetonian.com" target="_blank"
+                                style="color: white;" class="link-btn">
+                                <strong>The Daily Princetonian Print Subscriptions Application</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://subscribe.dailyprincetonian.com" target="_blank" style="color: white;"
+                                class="link-btn">
+                                <strong>The Daily Princetonian Subscriptions Application</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://github.com/zeligsonbrett/GrabAGrad" target="_blank" style="color: white;"
+                                class="link-btn">
+                                <strong>GrabAGrad</strong>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
-                </div>
-                <span class="nav-link" id="research"></span>
-                <div class="row">
-                    <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
-                            style="position: relative; top: -10px;">Research Papers</span></div>
-                    <div class="col-sm-12 col-lg-8">
-                        <div class="container-fluid" style="color: white;">
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://drive.google.com/file/d/1aL0zLamx3guruMY3h0oOMmRFGLoKnQ4R/view"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>Netlist Synthesization from Physical Breadboard Circuits</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://drive.google.com/file/d/1QmXY7o_bWHRb6P3S62NSdY_tvrdMFxhq/view?usp=sharing"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>Diagnosing and Debiasing Corpus-Based Political Bias and Insults in
-                                            GPT2</strong>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://drive.google.com/file/d/1676c6X4JtwRxNEQw9z-dZHmhL_r8kXCP/view?usp=sharing"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>21st Century New York City Construction Sentiment Analysis</strong>
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+            <span class="nav-link" id="daily-prince"></span>
+            <div class="row experience">
+                <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
+                        style="position: relative; top: -10px;">The Daily Princetonian</span></div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/black-history/" target="_blank"
+                                style="color: white;" class="link-btn">
+                                <strong>Black History Issue</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/frosh-survey-2027/" target="_blank"
+                                style="color: white;" class="link-btn">
+                                <strong>Frosh Survey 2027</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/prospect-year-in-review-2022/"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>Prospect Year in Review 2022</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/froshsurvey-26/" target="_blank"
+                                style="color: white;" class="link-btn">
+                                <strong>Frosh Survey 2026</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/thank-you-women-princeton-history/"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>Women's History Month Issue</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/commencement-2022/main.html#top"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>Commencement Issue</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/princeton-butler-tract-housing-justice/"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>Housing Justice Issue</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/senior-survey-2023/index.html"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>2023 Senior Survey Issue</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://projects.dailyprincetonian.com/senior-survey-2022/index.html"
+                                target="_blank" style="color: white;" class="link-btn">
+                                <strong>2022 Senior Survey Issue</strong>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
-                </div>
-                <span class="nav-link" id="graphics"></span>
-                <div class="row">
-                    <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
-                            style="position: relative; top: -10px;">Computer Graphics Projects</span></div>
-                    <div class="col-sm-12 col-lg-8">
-                        <div class="container-fluid" style="color: white;">
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://briantieu.github.io/lawnmower_lunacy/" target="_blank"
-                                        style="color: white;" class="link-btn">
-                                        <strong>Lawnmower Lunacy</strong>
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+            <span class="nav-link" id="graphics"></span>
+            <div class="row experience">
+                <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
+                        style="position: relative; top: -10px;">Computer Graphics Projects</span></div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://briantieu.github.io/lawnmower_lunacy/" target="_blank"
+                                style="color: white;" class="link-btn">
+                                <strong>Lawnmower Lunacy</strong>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
-                </div>
-                <span class="nav-link" id="ios"></span>
-                <div class="row">
-                    <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
-                            style="position: relative; top: -10px;">IOS Applications</span></div>
-                    <div class="col-sm-12 col-lg-8">
-                        <div class="container-fluid" style="color: white;">
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://apps.apple.com/us/app/the-daily-princetonian/id6461162604"
-                                        target="_blank" style="color: white;" class="link-btn">
-                                        <strong>The Daily Princetonian App</strong>
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+            <span class="nav-link" id="ios"></span>
+            <div class="row experience">
+                <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
+                        style="position: relative; top: -10px;">IOS Applications</span></div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <a href="https://apps.apple.com/us/app/the-daily-princetonian/id6461162604" target="_blank"
+                                style="color: white;" class="link-btn">
+                                <strong>The Daily Princetonian App</strong>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
-                </div>
-                <span class="nav-link" id="borderless"></span>
-                <div class="row">
-                    <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
-                            style="position: relative; top: -10px;">Borderless</span></div>
-                    <div class="col-sm-12 col-lg-8">
-                        <div class="container-fluid" style="color: white;">
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://boderlessapi.readme.io/reference/introduction" target="_blank"
-                                        style="color: white;" class="link-btn">
-                                        <strong>API Documentation</strong>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
-                </div>
-                <span class="nav-link" id="rentcheck"></span>
-                <div class="row">
-                    <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
-                            style="position: relative; top: -10px;">RentCheck</span></div>
-                    <div class="col-sm-12 col-lg-8">
-                        <div class="container-fluid" style="color: white;">
-                            <div class="row">
-                                <div class="col-12" style="text-align:center">
-                                    <a href="https://app.getrentcheck.com/signup" target="_blank" style="color: white;"
-                                        class="link-btn">
-                                        <strong>Signup Feature</strong>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
                 </div>
             </div>
             <span class="nav-link" id="experience-nav"></span>
             <h1 id="experience">Work Experience</h1>
-            <div class="row">
-                <p style="visibility: hidden">.</p>
-            </div>
+
             <div class="sub-nav">
                 <a href="#aws">Amazon Web Services</a>
                 <a href="#nbcu">NBCUniversal</a>
@@ -442,343 +387,276 @@
                 <a href="#borderless-exp">Borderless</a>
                 <a href="#rentcheck-exp">RentCheck</a>
                 <a href="#shreya-dixit">The Shreya Dixit Memorial Foundation</a>
-                <a href="#whiting-turner">The Whiting-Turner Contracting Company</a>
             </div>
-            <div class="container">
-                <span class="nav-link" id="aws"></span>
-                <div style="margin-top: 50px" class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://aws.amazon.com/?nc2=h_lg">
-                            <img style="width: 60%" src="images/aws.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Amazon Web Services</span></h2>
-                        <p class="position">Software Development Engineer Intern<br><span>May 2023 - August 2023</span>
-                        </p>
-                        <ul className="resume-list">
-                            <li>Developed an AWS CloudTrail feature which makes querying event data stores accessible to
-                                non-technical users via a simple UI.</li>
-                            <li>Completed assigned project four weeks ahead of schedule; completed additional AWS
-                                SageMaker ML research project.</li>
-                            <li>Composed a 10-page feature technical design document and led team-wide discussions to
-                                gain approval from senior engineers.</li>
-                            <li>Led project UI/UX design, informed by conducting user testing and consulting with
-                                in-house UI/UX experts and stakeholders.</li>
-                    </div>
+            <span class="nav-link" id="aws"></span>
+            <div style="margin-top: 50px" class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Amazon Web Services</span></h2>
+                    <p class="position">Software Development Engineer (Previously Software Development Engineer
+                        Intern)<br><span>May 2023 - Present</span>
+                    </p>
+                    <ul className="resume-list">
+                        <li>Build highly scalable and available components that handle billions of requests for AWS
+                            CloudTrail customer data every day.</li>
+                        <li>Leverage AWS tools including DynamoDB, Lambda, SQS, and SNS to enhance distributed
+                            system resiliency with strategic caching.</li>
+                        <li>Collaborate across AWS teams to troubleshoot system outages, improve product efficiency,
+                            and improve customer experiences.</li>
+                        <li>Developed an AWS CloudTrail feature which makes querying event data stores accessible to
+                            non-technical users via a simple UI.</li>
+                        <li>Completed assigned project four weeks ahead of schedule; completed additional AWS
+                            SageMaker ML research project.</li>
+                        <li>Led intern project UI/UX design, informed by conducting user testing and consulting with
+                            in-house UI/UX experts and stakeholders.</li>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://aws.amazon.com/?nc2=h_lg">
+                        <img style="width: 60%" src="images/aws.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="nbcu"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.nbcuniversal.com/">
-                            <img style="width: 80%" src="images/nbcuniversal.svg">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>NBCUniversal</span></h2>
-                        <p class="position">Project Coordinator<br>(Previously a Software Engineering
-                            Intern)<br><span>June
-                                2022 - Present</span></p>
-                        <ul className="resume-list">
-                            <li>Lead development, deployment, and documentation of three full stack React applications
-                                which eliminate friction in Rockefeller Center control room operations and were adopted
-                                by 150+ NBCU employees across New York, Los Angeles, and London offices.</li>
-                            <li>Enhanced enterprise-wide network monitoring by leading R&D of custom Datadog dashboards,
-                                populated via Python scripts,and served as a touchpoint for teams across the company
-                                looking to implement similar technologies within their organizations.</li>
-                            <li>Conducted market research and vendor interviews to recommend IPTV monitoring software to
-                                NBC executives.</li>
-                            <li>Performed the first enterprise-wide tests of the AWS Fault Injection Simulator and
-                                presented results to company leadership.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="nbcu"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>NBCUniversal</span></h2>
+                    <p class="position">Project Coordinator (Previously a Software Engineering Intern)<br><span>June
+                            2022 - May 2024</span></p>
+                    <ul className="resume-list">
+                        <li>Led development, deployment, and documentation of three full stack React applications
+                            which eliminated friction in Rockefeller Center control room operations and were adopted
+                            by 150+ NBCU employees across New York, Los Angeles, and London offices.</li>
+                        <li>Enhanced enterprise-wide network monitoring by leading R&D of custom Datadog dashboards,
+                            populated via Python scripts,and served as a touchpoint for teams across the company
+                            looking to implement similar technologies within their organizations.</li>
+                        <li>Conducted market research and vendor interviews to recommend IPTV monitoring software to
+                            NBC executives.</li>
+                        <li>Performed the first enterprise-wide tests of the AWS Fault Injection Simulator and
+                            presented results to company leadership.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://www.nbcuniversal.com/">
+                        <img style="width: 80%" src="images/nbcuniversal.svg">
+                    </a>
                 </div>
-                <span class="nav-link" id="daily-princetonian"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.dailyprincetonian.com/">
-                            <img style="width: 80%" src="images/daily-princetonian.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>The Daily Princetonian</span></h2>
-                        <p class="position">Head Web Design and Development Editor + Software
-                            Engineer<br><span>September
-                                2021 - Present</span></p>
-                        <ul className="resume-list">
-                            <li>Lead 20 developers, oversee project timelines, run meetings, and manage product
-                                development to serve 5k+ monthly users.</li>
-                            <li>Built three full-stack web-apps, IOS mobile app features, and 10+ web projects that
-                                support subscriptions and editorial content.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="daily-princetonian"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>The Daily Princetonian</span></h2>
+                    <p class="position">Head Web Design and Development Editor + Software
+                        Engineer<br><span>September 2021 - January 2024</span></p>
+                    <ul className="resume-list">
+                        <li>Led 20 developers, oversaw project timelines, ran meetings, and managed product
+                            development to serve 5k+ monthly users.</li>
+                        <li>Built three full-stack web-apps, IOS mobile app features, and 10+ web projects that
+                            support subscriptions and editorial content.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://www.dailyprincetonian.com/">
+                        <img style="width: 80%" src="images/daily-princetonian.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="princeton-cs"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.cs.princeton.edu/">
-                            <img style="width: 80%" src="images/princeton.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Princeton University Department of Computer
-                                Science</span></h2>
-                        <p class="position">Head Lab Teaching Assistant <br><span>September 2021 - Present</span></p>
-                        <ul className="resume-list">
-                            <li>Manage 60+ teaching assistants across 3 computer science courses, setting expectations,
-                                and communicating with professors.</li>
-                            <li>Help 300+ students debug their Java and C assignment code and answer algorithm design,
-                                run-time, and systems questions.</li>
-                            <li>Redesigned TA interviews and scheduling based on student attendance and feedback data
-                                collected via custom Python scripts.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="princeton-cs"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Princeton University Department of Computer
+                            Science</span></h2>
+                    <p class="position">Head Lab Teaching Assistant <br><span>September 2021 - January 2024</span>
+                    </p>
+                    <ul className="resume-list">
+                        <li>Managed 60+ teaching assistants across 3 computer science courses, setting expectations,
+                            and communicating with professors.</li>
+                        <li>Helped 300+ students debug their Java and C assignment code and answer algorithm design,
+                            run-time, and systems questions.</li>
+                        <li>Redesigned TA interviews and scheduling based on student attendance and feedback data
+                            collected via custom Python scripts.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://www.cs.princeton.edu/">
+                        <img style="width: 80%" src="images/princeton.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="princeton-cdh"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://cdh.princeton.edu/">
-                            <img style="width: 60%" src="images/center-digital-humanities.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Princeton Center for Digital Humanities</span>
-                        </h2>
-                        <p class="position">Optical Character Recognition Researcher<br><span>March 2023 -
-                                Present</span>
-                        </p>
-                        <ul className="resume-list">
-                            <li>Train, customize, and evaluate optical character recognition models to extract data from
-                                20th century handwritten logbooks.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="princeton-cdh"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Princeton Center for Digital Humanities</span>
+                    </h2>
+                    <p class="position">Optical Character Recognition Researcher<br><span>March 2023 -
+                            May 2024</span>
+                    </p>
+                    <ul className="resume-list">
+                        <li>Trained, customized, and evaluated optical character recognition models to extract data
+                            from
+                            20th century handwritten logbooks.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://cdh.princeton.edu/">
+                        <img style="width: 60%" src="images/center-digital-humanities.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="pupil"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.getpupil.com/">
-                            <img style="width: 80%" src="images/pupil.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Pupil</span></h2>
-                        <p class="position">Software Engineer <br><span>May 2022 - October 2022</span></p>
-                        <ul className="resume-list">
-                            <li>Worked in a team of 5 to build the MVP of a full stack Next.js React app (using MongoDB)
-                                that
-                                matches students with mentors.</li>
-                            <li>Placed in charge of building out the password reset and direct messaging features,
-                                including
-                                all
-                                front and backend components.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="pupil"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Pupil</span></h2>
+                    <p class="position">Software Engineer <br><span>May 2022 - October 2022</span></p>
+                    <ul className="resume-list">
+                        <li>Worked in a team of 5 to build the MVP of a full stack Next.js React app (using MongoDB)
+                            that
+                            matches students with mentors.</li>
+                        <li>Placed in charge of building out the password reset and direct messaging features,
+                            including
+                            all
+                            front and backend components.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://www.getpupil.com/">
+                        <img style="width: 80%" src="images/pupil.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="borderless-exp"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://getborderless.com/">
-                            <img style="width: 80%" src="images/borderless.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Borderless</span></h2>
-                        <p class="position">App Development Intern <br><span>December 2021 - January 2022</span></p>
-                        <ul className="resume-list">
-                            <li>Built the company a complete and robust REST API Documentation from scratch in
-                                accordance
-                                with
-                                openapi 3.0 standards.</li>
-                            <li>Coded conditional rendering of API Documentation elements to adhere to endpoint
-                                requirements,
-                                improving user experience.</li>
-                            <li>Constructed a new endpoint on the company's REST API to fetch a user's widget
-                                customization
-                                settings.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="borderless-exp"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Borderless</span></h2>
+                    <p class="position">App Development Intern <br><span>December 2021 - January 2022</span></p>
+                    <ul className="resume-list">
+                        <li>Built the company a complete and robust REST API Documentation from scratch in
+                            accordance
+                            with
+                            openapi 3.0 standards.</li>
+                        <li>Coded conditional rendering of API Documentation elements to adhere to endpoint
+                            requirements,
+                            improving user experience.</li>
+                        <li>Constructed a new endpoint on the company's REST API to fetch a user's widget
+                            customization
+                            settings.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://getborderless.com/">
+                        <img style="width: 80%" src="images/borderless.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="rentcheck-exp"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.getrentcheck.com/">
-                            <img style="width: 80%" src="images/rentcheck.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>RentCheck</span></h2>
-                        <p class="position">Software Development Intern <br><span>November 2021 - January 2022</span>
-                        </p>
-                        <ul className="resume-list">
-                            <li>Built a new Sign Up feature on the company’s web application. Gained experience using
-                                Agile
-                                Software Development.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="rentcheck-exp"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>RentCheck</span></h2>
+                    <p class="position">Software Development Intern <br><span>November 2021 - January 2022</span>
+                    </p>
+                    <ul className="resume-list">
+                        <li>Built a new Sign Up feature on the company’s web application. Gained experience using
+                            Agile Software Development.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://www.getrentcheck.com/">
+                        <img style="width: 80%" src="images/rentcheck.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="shreya-dixit"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://shreyadixit.org/">
-                            <img style="width: 40%" src="images/shreya-dixit.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>The Shreya Dixit Memorial Foundation</span>
-                        </h2>
-                        <p class="position">Marketing Committee Leader <br><span>June 2021 - August 2022</span></p>
-                        <ul className="resume-list">
-                            <li>Led, developed, and implemented a six-week plan for the marketing division of the
-                                internship
-                                program.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="shreya-dixit"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>The Shreya Dixit Memorial Foundation</span>
+                    </h2>
+                    <p class="position">Marketing Committee Leader <br><span>June 2021 - August 2022</span></p>
+                    <ul className="resume-list">
+                        <li>Led, developed, and implemented a six-week plan for the marketing division of the
+                            internship
+                            program.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
-                </div>
-                <span class="nav-link" id="whiting-turner"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.whiting-turner.com/">
-                            <img style="width: 80%" src="images/whiting-turner.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>The Whiting-Turner Contracting Company</span>
-                        </h2>
-                        <p class="position">Engineering Intern <br><span>June 2021 - August 2021</span></p>
-                        <ul className="resume-list">
-                            <li>Collaborated with the Virtual Design and Construction team, using BIM software to
-                                identify
-                                clashes between drawings.</li>
-                            <li>Maintained client relationships by producing detailed daily quality and safety reports
-                                presented
-                                to client representatives.</li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <p style="visibility: hidden">.</p>
-                    </div>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://shreyadixit.org/">
+                        <img style="width: 40%" src="images/shreya-dixit.png">
+                    </a>
                 </div>
             </div>
             <span class="nav-link" id="leadership-nav"></span>
             <h1 id="leadership">Leadership</h1>
-            <div class="row">
-                <p style="visibility: hidden">.</p>
-            </div>
+
             <div class="sub-nav">
                 <a href="#princeton">Princeton University</a>
                 <a href="#matriculate">Matriculate</a>
                 <a href="#club-swimming">Princeton Club Swimming</a>
                 <a href="#mathey-college">Mathey College</a>
             </div>
-            <div class="container">
-                <span class="nav-link" id="princeton"></span>
-                <div class="row" style="margin-top: 50px;">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.princeton.edu/">
-                            <img style="width: 80%" src="images/princeton.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Princeton University</span></h2>
-                        <p class="position">Residential College Advisor<br><span>August 2022 - Present</span></p>
-                        <ul className="resume-list">
-                            <li>Mentor a diverse group of sixteen first-year students.</li>
-                            <li>Encourage holistic personal development and promote safety, citizenship, health and
-                                wellness to build an inclusive environment.</li>
-                            <li>Help students develop responsible personal, academic, and social decision-making
-                                skills.
-                            </li>
-                        </ul>
-                    </div>
+            <span class="nav-link" id="princeton"></span>
+            <div class="row experience" style="margin-top: 50px;">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Princeton University</span></h2>
+                    <p class="position">Residential College Advisor<br><span>August 2022 - May 2024</span></p>
+                    <ul className="resume-list">
+                        <li>Mentored, advised, performed conflict resolution, built community, and planned
+                            activities for a group of 20 first-year students.</li>
+                        <li>Encouraged holistic personal development and promoted safety, citizenship, health and
+                            wellness to build an inclusive environment.</li>
+                        <li>Helped students develop responsible personal, academic, and social decision-making
+                            skills.
+                        </li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://www.princeton.edu/">
+                        <img style="width: 80%" src="images/princeton.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="matriculate"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.matriculate.org/">
-                            <img style="width: 80%" src="images/matriculate.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Matriculate</span></h2>
-                        <p class="position">Advising Fellow<br><span>January 2022 - August 2023</span></p>
-                        <ul className="resume-list">
-                            <li>Mentor three high achieving low-income high school students and help them achieve
-                                success in
-                                the college admissions process.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="matriculate"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Matriculate</span></h2>
+                    <p class="position">Advising Fellow<br><span>January 2022 - August 2023</span></p>
+                    <ul className="resume-list">
+                        <li>Mentored three high achieving low-income high school students and help them achieve
+                            success in the college admissions process.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://www.matriculate.org/">
+                        <img style="width: 80%" src="images/matriculate.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="club-swimming"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://clubswim.princeton.edu/">
-                            <img style="width: 80%" src="images/club-swim.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Princeton Club Swimming</span></h2>
-                        <p class="position">Captain<br><span>January 2020 - January 2022</span></p>
-                        <ul className="resume-list">
-                            <li> Redesigned the weekly workout writing process to prioritize creating practices that
-                                appeal
-                                to
-                                swimmers of all abilities.</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="club-swimming"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Princeton Club Swimming</span></h2>
+                    <p class="position">Captain<br><span>January 2020 - January 2022</span></p>
+                    <ul className="resume-list">
+                        <li>Redesigned the weekly workout writing process to prioritize creating practices that
+                            appeal to swimmers of all abilities.</li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <p style="visibility: hidden">.</p>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://clubswim.princeton.edu/">
+                        <img style="width: 80%" src="images/club-swim.png">
+                    </a>
                 </div>
-                <span class="nav-link" id="mathey-college"></span>
-                <div class="row">
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://matheycollege.princeton.edu/">
-                            <img style="width: 25%" src="images/mathey-college.png">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 ">
-                        <h2 class="text" style="text-align: center"><span>Mathey College Council</span></h2>
-                        <p class="position">Council Chair<br><span>September 2020 - May 2022</span></p>
-                        <ul className="resume-list">
-                            <li>Conduct bi-weekly council meetings, delegate tasks to council members, and plan study
-                                breaks
-                                for
-                                over 400 students</li>
-                        </ul>
-                    </div>
+            </div>
+            <span class="nav-link" id="mathey-college"></span>
+            <div class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Mathey College Council</span></h2>
+                    <p class="position">Council Chair<br><span>September 2020 - May 2022</span></p>
+                    <ul className="resume-list">
+                        <li>Conducted bi-weekly council meetings, delegate tasks to council members, and plan study
+                            breaks for over 400 students</li>
+                    </ul>
+                </div>
+                <div class="image col-lg-3 col-sm-0 align-self-center">
+                    <a target="_blank" href="https://matheycollege.princeton.edu/">
+                        <img style="width: 25%" src="images/mathey-college.png">
+                    </a>
                 </div>
             </div>
     </div>

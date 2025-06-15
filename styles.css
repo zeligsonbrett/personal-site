@@ -116,6 +116,10 @@ main {
     background-color: white;
 }
 
+.experience {
+    margin-bottom: 30px;
+}
+
 .image {
     text-align: center;
 }
@@ -169,7 +173,7 @@ p {
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 li span {
@@ -248,9 +252,9 @@ li span {
 .sub-nav {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     color: var(--t);
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     flex-wrap: wrap;
     color: black;
     width: 100%;
@@ -273,10 +277,17 @@ li span {
     transition: ease 0.6s;
 }
 
+#about-me,
+#projects,
+#experience,
+#leadership {
+    margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1000px) {
     .text {
         text-align: left;
-        padding-top: 20px;
+        padding-top: 0px;
     }
 
     .text span {
@@ -284,20 +295,21 @@ li span {
     }
 
     #about-me,
-    #education,
     #projects,
     #experience,
-    #leadership {
+    #leadership,
+    #education {
+        margin-bottom: 20px;
         font-size: 5vw;
     }
 
-    .sub-nav {
-        font-size: 2.5vw;
-        margin-top: 0px;
+    #education {
+        margin-bottom: 10px;
     }
 
-    #projects {
-        margin-bottom: -30px
+    .sub-nav {
+        font-size: 2vw;
+        margin-top: 0px;
     }
 
     img {
