@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5FCVF566Y"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -11,59 +12,12 @@
 
         gtag('config', 'G-Y5FCVF566Y');
     </script>
-    <link rel="stylesheet" href="styles.css">
     <title>Brett Zeligson's Personal Website</title>
-    <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="favicons/favicon3.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<script>
-    var className = "scrolled-down";
-    var className2 = "scrolled-down-a";
-    var scrollTrigger = window.innerHeight - 300;
-
-    window.onscroll = function () {
-        // We add pageYOffset for compatibility with IE.
-        if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-            document.getElementById("navbar").classList.add(className);
-            let elements = document.getElementsByClassName("link");
-            for (let i = 0; i < elements.length; i++) {
-                elements[i].classList.add(className2);
-            }
-        } else {
-            document.getElementById("navbar").classList.remove(className); let elements = document.getElementsByClassName("link");
-            for (let i = 0; i < elements.length; i++) {
-                elements[i].classList.remove(className2);
-            }
-        }
-    };
-</script>
-
-<script>
-    let menuOpen = false;
-    function changeMenu() {
-        if (!menuOpen) {
-            document.getElementById("mobile-links").classList.remove("mobile-links-hide");
-            menuOpen = true;
-        }
-        else {
-            document.getElementById("mobile-links").classList.add("mobile-links-hide");
-            menuOpen = false;
-        }
-    }
-</script>
 
 <body>
     <nav id="navbar">
@@ -73,60 +27,54 @@
         <a class="link" href="#experience-nav">Experience</a>
         <a class="link" href="#leadership-nav">Leadership</a>
         <span>
-            <a class="link" target="_blank" href="https://github.com/zeligsonbrett">GitHub</a>
-            <a class="link" target="_blank" href="https://www.linkedin.com/in/brett-zeligson/">LinkedIn</a>
+            <a class="link" target="_blank" rel="noopener" href="https://github.com/zeligsonbrett">GitHub</a>
+            <a class="link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/brett-zeligson/">LinkedIn</a>
         </span>
     </nav>
 
     <nav id="mobile-nav">
-        <span onclick=changeMenu()>&#9776;</span>
+        <button type="button" id="menu-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="mobile-links"><span></span><span></span><span></span></button>
 
-        <div id="mobile-links" class="mobile-links mobile-links-hide">
-            <a class="link" href="#about-me-nav">About</a><br>
-            <a class="link" href="#education-nav">Education</a><br>
-            <a class="link" href="#projects-nav">Projects</a><br>
-            <a class="link" href="#experience-nav">Experience</a><br>
-            <a class="link" href="#leadership-nav">Leadership</a><br>
-            <br>
-
-            <a class="link" target="_blank" href="https://github.com/zeligsonbrett">GitHub</a><br>
-            <a class="link" target="_blank" href="https://www.linkedin.com/in/brett-zeligson/">LinkedIn</a><br>
-            <br>
+        <div id="mobile-links" class="mobile-links">
+            <a class="link" href="#about-me-nav">About</a>
+            <a class="link" href="#education-nav">Education</a>
+            <a class="link" href="#projects-nav">Projects</a>
+            <a class="link" href="#experience-nav">Experience</a>
+            <a class="link link-gap" href="#leadership-nav">Leadership</a>
+            <a class="link" target="_blank" rel="noopener" href="https://github.com/zeligsonbrett">GitHub</a>
+            <a class="link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/brett-zeligson/">LinkedIn</a>
         </div>
     </nav>
 
-    <div>
-        <div class="header">
-            <h4>Brett Zeligson</h4>
-        </div>
+    <header class="header">
+        <h4>Brett Zeligson</h4>
+    </header>
 
-        <section>
-            <span class="nav-link" id="about-me-nav"></span>
-            <h1 id="about-me">About Me</h1>
-            <p>
-                Currently, in my work as a Software Engineer for Amazon Web Services (AWS), specifically AWS CloudTrail,
-                I develop distributed systems which are highly available, scalable, and reliable in order to serve
-                billions of customer requests every day.
-                Professionally, I am most interested in opportunities that allow me to merge my interests in
-                investigative journalism, urban
-                studies, real estate, and architecture with my passions for computer science and artificial intelligence.
-            </p>
-        </section>
+    <section>
+        <h1 id="about-me-nav">About Me</h1>
+        <p>
+            Currently, in my work as a Software Development Engineer II at Amazon Web Services (AWS), specifically
+            AWS CloudTrail, I develop distributed systems which are highly available, scalable, and reliable in order
+            to process over a billion requests per hour.
+            Professionally, I am most interested in opportunities that allow me to merge my interests in
+            investigative journalism, urban
+            studies, real estate, and architecture with my passions for computer science and artificial intelligence.
+        </p>
+    </section>
 
-        <br>
-        <main>
-            <span class="nav-link" id="education-nav"></span>
-            <h1 id="education">Education</h1>
+    <main>
+            <h1 id="education-nav">Education</h1>
             <div>
                 <div class="row experience">
                     <div class="col-lg-7 col-sm-12 ">
                         <h2 class="text" style="text-align: left"><span>Princeton University</span></h2>
-                        <span class="position">BSE Computer Science</span><br>
-                        <i class="minors">Minors in Statistics and Machine Learning, Finance, Urban Studies, and
-                            Architecture/Engineering</i><br>
+                        <p class="position mb-0">BSE Computer Science, Cum Laude</p>
+                        <i class="minors">Minors in Machine Learning and Statistics, Urban Studies,
+                            Architecture/Engineering, and Finance</i>
                         <p class="position"><span>Graduated May 2024</span></p>
-                        <ul className="resume-list">
-                            <li><strong>Technical Coursework:</strong>
+                        <ul class="resume-list">
+                            <li><strong>Coursework:</strong>
                                 <ul class="course-list">
                                     <li>Computer Graphics</li>
                                     <li>Computer Vision</li>
@@ -138,19 +86,32 @@
                                     <li>Web-App Development</li>
                                     <li>Algorithms and Data Structures</li>
                                     <li>Programming Systems</li>
+                                    <li>Urban History</li>
+                                    <li>Architecture Studio</li>
                                 </ul>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="image col-lg-5 col-sm-0 align-self-center">
-                        <a target="_blank" href="https://www.cs.princeton.edu/">
-                            <img style="width: 80%" src="images/princeton.png">
+                    <div class="image col-lg-5 d-none d-lg-block align-self-center">
+                        <a target="_blank" rel="noopener" href="https://www.cs.princeton.edu/">
+                            <img src="images/princeton.png" alt="Princeton University">
                         </a>
                     </div>
                 </div>
+                <div class="row experience">
+                    <div class="col-12">
+                        <h2 class="text" style="text-align: left"><span>Technical Skills</span></h2>
+                        <ul class="resume-list">
+                            <li><strong>Proficient in:</strong> React, Java, JavaScript, TypeScript, Python (Pandas,
+                                NumPy, PyTorch), Git, AWS, C, SQL, HTML, CSS, Linux, Datadog</li>
+                            <li><strong>Experienced with:</strong> Svelte, MongoDB, Figma, React Native, Google Cloud
+                                Platform, Azure, Flask, jQuery, Ajax, Microsoft Suite</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <span class="nav-link" id="projects-nav"></span>
-            <h1 id="projects">Projects</h1>
+            <h1 id="projects-nav">Projects</h1>
 
             <div class="sub-nav">
                 <a href="#research">Research</a>
@@ -159,15 +120,14 @@
                 <a href="#graphics">Computer Graphics Projects</a>
                 <a href="#ios">iOS Applications</a>
             </div>
-            <span class="nav-link" id="research"></span>
-            <div style="margin-top: 50px" class="row experience">
+            <div id="research" style="margin-top: 50px" class="row experience">
                 <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
                         style="position: relative; top: -10px;">Research</span></div>
                 <div class="col-sm-12 col-lg-8">
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://drive.google.com/file/d/1jVSCPam22YjHBsNIOy40ST8Bn3VagWf5/view?usp=sharing"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>(Senior Thesis) Modeling Socioeconomic Variability Using Geographic
                                     Factors: A Comparative Study of Network-Based Model Architectures in
                                     Monocentric and Polycentric Metropolitan Regions</strong>
@@ -176,8 +136,16 @@
                     </div>
                     <div class="row">
                         <div class="col-12" style="text-align:center">
+                            <a href="https://zeligsonbrett.github.io/Brett-Zeligson-Thesis/"
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
+                                <strong>Senior Thesis Data Visualizations Website</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
                             <a href="https://drive.google.com/file/d/1wFQ0eWIkbV1HPQ4W_mH5wpjccxXjxWeY/view?usp=sharing"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>Regression Models of Housing Prices Leveraging Broadcast Media
                                     Sentiment</strong>
                             </a>
@@ -186,7 +154,7 @@
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://drive.google.com/file/d/1676c6X4JtwRxNEQw9z-dZHmhL_r8kXCP/view?usp=sharing"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>21st Century New York City Construction Sentiment Analysis</strong>
                             </a>
                         </div>
@@ -194,8 +162,8 @@
 
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://cdh.princeton.edu/updates/2023/12/06/from-logbook-to-spreadsheet-to/"
-                                target="_blank" style="color: white;" class="link-btn">
+                            <a href="https://cdh.princeton.edu/blog/from-logbook-to-spreadsheet-to/"
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>Optical Character Recognition System to Extract 20th Century Handwritten Logbook
                                     Data</strong>
                             </a>
@@ -203,16 +171,16 @@
                     </div>
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://drive.google.com/file/d/1aL0zLamx3guruMY3h0oOMmRFGLoKnQ4R/view"
-                                target="_blank" style="color: white;" class="link-btn">
-                                <strong>Netlist Synthesization from Physical Breadboard Circuits</strong>
+                            <a href="https://drive.google.com/file/d/1yIIV_3YpkCMU7_ONZPYq6Z-ViCoWPe10/view?usp=drive_link"
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
+                                <strong>Circuit Image Recognition and Netlist (Circuit Diagram) Synthesis</strong>
                             </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://drive.google.com/file/d/1QmXY7o_bWHRb6P3S62NSdY_tvrdMFxhq/view?usp=sharing"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>Diagnosing and Debiasing Corpus-Based Political Bias and Insults in
                                     GPT2</strong>
                             </a>
@@ -220,14 +188,13 @@
                     </div>
                 </div>
             </div>
-            <span class="nav-link" id="full-stack"></span>
-            <div class="row experience">
+            <div id="full-stack" class="row experience">
                 <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
                         style="position: relative; top: -10px;">Full-Stack Web Applications</span></div>
                 <div class="col-sm-12 col-lg-8">
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="http://quizzes.dailyprincetonian.com/" target="_blank" style="color: white;"
+                            <a href="http://quizzes.dailyprincetonian.com/" target="_blank" rel="noopener" style="color: white;"
                                 class="link-btn">
                                 <strong>Daily Princetonian Quizzes App</strong>
                             </a>
@@ -235,7 +202,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://print-subscribe.dailyprincetonian.com" target="_blank"
+                            <a href="https://print-subscribe.dailyprincetonian.com" target="_blank" rel="noopener"
                                 style="color: white;" class="link-btn">
                                 <strong>The Daily Princetonian Print Subscriptions Application</strong>
                             </a>
@@ -243,7 +210,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://subscribe.dailyprincetonian.com" target="_blank" style="color: white;"
+                            <a href="https://subscribe.dailyprincetonian.com" target="_blank" rel="noopener" style="color: white;"
                                 class="link-btn">
                                 <strong>The Daily Princetonian Subscriptions Application</strong>
                             </a>
@@ -251,7 +218,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://github.com/zeligsonbrett/GrabAGrad" target="_blank" style="color: white;"
+                            <a href="https://github.com/zeligsonbrett/GrabAGrad" target="_blank" rel="noopener" style="color: white;"
                                 class="link-btn">
                                 <strong>GrabAGrad</strong>
                             </a>
@@ -259,14 +226,13 @@
                     </div>
                 </div>
             </div>
-            <span class="nav-link" id="daily-prince"></span>
-            <div class="row experience">
+            <div id="daily-prince" class="row experience">
                 <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
                         style="position: relative; top: -10px;">The Daily Princetonian</span></div>
                 <div class="col-sm-12 col-lg-8">
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://projects.dailyprincetonian.com/frosh-survey-2027/" target="_blank"
+                            <a href="https://projects.dailyprincetonian.com/frosh-survey-2027/" target="_blank" rel="noopener"
                                 style="color: white;" class="link-btn">
                                 <strong>Frosh Survey 2027</strong>
                             </a>
@@ -275,14 +241,14 @@
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://projects.dailyprincetonian.com/prospect-year-in-review-2022/"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>Prospect Year in Review 2022</strong>
                             </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://projects.dailyprincetonian.com/froshsurvey-26/" target="_blank"
+                            <a href="https://projects.dailyprincetonian.com/froshsurvey-26/" target="_blank" rel="noopener"
                                 style="color: white;" class="link-btn">
                                 <strong>Frosh Survey 2026</strong>
                             </a>
@@ -291,7 +257,7 @@
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://projects.dailyprincetonian.com/thank-you-women-princeton-history/"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>Women's History Month Issue</strong>
                             </a>
                         </div>
@@ -299,14 +265,14 @@
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://projects.dailyprincetonian.com/commencement-2022/main.html#top"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>Commencement Issue</strong>
                             </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://projects.dailyprincetonian.com/black-history/" target="_blank"
+                            <a href="https://projects.dailyprincetonian.com/black-history/" target="_blank" rel="noopener"
                                 style="color: white;" class="link-btn">
                                 <strong>Black History Issue</strong>
                             </a>
@@ -315,7 +281,7 @@
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://projects.dailyprincetonian.com/princeton-butler-tract-housing-justice/"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>Housing Justice Issue</strong>
                             </a>
                         </div>
@@ -323,7 +289,7 @@
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://projects.dailyprincetonian.com/senior-survey-2023/index.html"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>2023 Senior Survey Issue</strong>
                             </a>
                         </div>
@@ -331,21 +297,20 @@
                     <div class="row">
                         <div class="col-12" style="text-align:center">
                             <a href="https://projects.dailyprincetonian.com/senior-survey-2022/index.html"
-                                target="_blank" style="color: white;" class="link-btn">
+                                target="_blank" rel="noopener" style="color: white;" class="link-btn">
                                 <strong>2022 Senior Survey Issue</strong>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <span class="nav-link" id="graphics"></span>
-            <div class="row experience">
+            <div id="graphics" class="row experience">
                 <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
                         style="position: relative; top: -10px;">Computer Graphics Projects</span></div>
                 <div class="col-sm-12 col-lg-8">
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://briantieu.github.io/lawnmower_lunacy/" target="_blank"
+                            <a href="https://briantieu.github.io/lawnmower_lunacy/" target="_blank" rel="noopener"
                                 style="color: white;" class="link-btn">
                                 <strong>Lawnmower Lunacy</strong>
                             </a>
@@ -353,14 +318,13 @@
                     </div>
                 </div>
             </div>
-            <span class="nav-link" id="ios"></span>
-            <div class="row experience">
+            <div id="ios" class="row experience">
                 <div class="text project-cat my-auto col-sm-12 col-lg-4"><span
                         style="position: relative; top: -10px;">iOS Applications</span></div>
                 <div class="col-sm-12 col-lg-8">
                     <div class="row">
                         <div class="col-12" style="text-align:center">
-                            <a href="https://apps.apple.com/us/app/the-daily-princetonian/id6461162604" target="_blank"
+                            <a href="https://apps.apple.com/us/app/the-daily-princetonian/id6461162604" target="_blank" rel="noopener"
                                 style="color: white;" class="link-btn">
                                 <strong>The Daily Princetonian App</strong>
                             </a>
@@ -368,101 +332,124 @@
                     </div>
                 </div>
             </div>
-            <span class="nav-link" id="experience-nav"></span>
-            <h1 id="experience">Work Experience</h1>
+            <h1 id="experience-nav">Work Experience</h1>
 
             <div class="sub-nav">
                 <a href="#aws">Amazon Web Services</a>
                 <a href="#nbcu">NBCUniversal</a>
+                <a href="#princeton-cdh">Princeton Center for Digital Humanities</a>
                 <a href="#daily-princetonian">The Daily Princetonian</a>
                 <a href="#princeton-cs">Princeton University Department of Computer Science</a>
-                <a href="#princeton-cdh">Princeton Center for Digital Humanities</a>
                 <a href="#pupil">Pupil</a>
                 <a href="#borderless-exp">Borderless</a>
                 <a href="#rentcheck-exp">RentCheck</a>
                 <a href="#shreya-dixit">The Shreya Dixit Memorial Foundation</a>
             </div>
-            <span class="nav-link" id="aws"></span>
-            <div style="margin-top: 50px" class="row experience">
+            <div id="aws" style="margin-top: 50px" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>Amazon Web Services</span></h2>
-                    <p class="position">Software Development Engineer (Previously Software Development Engineer
-                        Intern)<br><span>May 2023 - Present</span>
-                    </p>
-                    <ul className="resume-list">
-                        <li>Building a system which leverages internal LLMs to generate and evaluate code for third
-                            party integrations with AWS CloudTrail.</li>
-                        <li>Evaluated AWS SageMaker LLMs and engineered prompts for generating SQL queries from
-                            customers' natural language prompts.</li>
-                        <li>Designed a new caching mechanism to improve AWS CloudTrail's ability to handle billions of
-                            requests for customer data hourly.</li>
-                        <li>Led project design for team intern and mentored them in delivering a frontend topology
-                            feature built using CloudTrail events.</li>
-                        <li>Created a new AWS CloudTrail feature which makes querying event data stores accessible to
-                            non-technical users via a simple UI.</li>
-                        <li>Leverage AWS tools including DynamoDB, Lambda, SQS, and SNS to enhance distributed
-                            system resiliency with strategic caching.</li>
-                        <li>Collaborate across AWS teams to troubleshoot system outages, improve product efficiency,
-                            and improve customer experiences.</li>
+                    <p class="position">Software Development Engineer II<br><span>August 2026 - Present</span></p>
+                    <ul class="resume-list">
+                        <li>Subject matter expert for three CloudTrail-critical distributed system components which
+                            process over 1 billion requests per hour.</li>
+                        <li>Collaborate with teams across all AWS services to deploy flexible, host-integrated clients
+                            capable of sustaining over 1 million TPS.</li>
+                        <li>Created a set of custom AI agents which reduce team ops load by 40% and streamline junior
+                            engineer onboarding timelines.</li>
+                        <li>Built Bedrock infrastructure to launch AWS Assurance, a new service using AI to automate
+                            customer compliance auditing.</li>
+                    </ul>
+                    <p class="position">Software Development Engineer I<br><span>August 2024 - August 2026</span></p>
+                    <ul class="resume-list">
+                        <li>Designed a client-side cache hydration feature and managed a team of engineers to deliver
+                            and integrate the project on time.</li>
+                        <li>Designed and built features including regular expression-based CloudTrail event filtering
+                            and CloudTrail cache TTL extension.</li>
+                        <li>Won org-wide hackathon by working with PMs to build a customer insights analyzer improving
+                            engineers' customer obsession.</li>
+                        <li>Engineered an LLM-driven system to automate code generation and validation for third-party
+                            AWS CloudTrail data integrations.</li>
+                    </ul>
+                    <p class="position">Software Development Engineer Intern<br><span>May 2023 - August 2023</span></p>
+                    <ul class="resume-list">
+                        <li>Delivered SQL query generation project 3 weeks early. Second project benchmarked LLMs to
+                            translate natural language into SQL.</li>
+                    </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://aws.amazon.com/?nc2=h_lg">
-                        <img style="width: 60%" src="images/aws.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://aws.amazon.com/?nc2=h_lg">
+                        <img class="logo-md" src="images/aws.png" alt="Amazon Web Services">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="nbcu"></span>
-            <div class="row experience">
+            <div id="nbcu" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>NBCUniversal</span></h2>
-                    <p class="position">Project Coordinator (Previously a Software Engineering Intern)<br><span>June
-                            2022 - May 2024</span></p>
-                    <ul className="resume-list">
-                        <li>Led development, deployment, and documentation of three full stack React applications
-                            which eliminated friction in Rockefeller Center control room operations and were adopted
-                            by 150+ NBCU employees across New York, Los Angeles, and London offices.</li>
-                        <li>Enhanced enterprise-wide network monitoring by leading R&D of custom Datadog dashboards,
-                            populated via Python scripts,and served as a touchpoint for teams across the company
-                            looking to implement similar technologies within their organizations.</li>
+                    <p class="position">Software Engineer / Project Coordinator<br><span>June 2022 - August 2024</span></p>
+                    <ul class="resume-list">
+                        <li>Led development of three full-stack React apps streamlining Rockefeller Center control
+                            room ops. Adopted by 150+ employees.</li>
+                        <li>Led R&amp;D of Datadog dashboards for control room ops. Worked with 5+ teams across NBCU to
+                            help them build similar tools.</li>
                         <li>Conducted market research and vendor interviews to recommend IPTV monitoring software to
                             NBC executives.</li>
                         <li>Performed the first enterprise-wide tests of the AWS Fault Injection Simulator and
                             presented results to company leadership.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://www.nbcuniversal.com/">
-                        <img style="width: 80%" src="images/nbcuniversal.svg">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://www.nbcuniversal.com/">
+                        <img src="images/nbcuniversal.svg" alt="NBCUniversal">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="daily-princetonian"></span>
-            <div class="row experience">
+            <div id="princeton-cdh" class="row experience">
+                <div class="col-lg-9 col-sm-12 ">
+                    <h2 class="text" style="text-align: left"><span>Princeton Center for Digital Humanities</span>
+                    </h2>
+                    <p class="position">Optical Character Recognition Researcher<br><span>March 2023 -
+                            May 2024</span>
+                    </p>
+                    <ul class="resume-list">
+                        <li>Trained, tuned, and evaluated optical character recognition models to transcribe text from
+                            20th century handwritten logbooks.</li>
+                        <li>Translated the qualitative research goals of a non-technical professor into the design of a
+                            custom text extraction system.</li>
+                        <li>Built an end-to-end computer vision solution enabling historians to transcribe, tabulate,
+                            and analyze logbook data in seconds.</li>
+                    </ul>
+                </div>
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://cdh.princeton.edu/">
+                        <img class="logo-md" src="images/center-digital-humanities.png" alt="Princeton Center for Digital Humanities">
+                    </a>
+                </div>
+            </div>
+            <div id="daily-princetonian" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>The Daily Princetonian</span></h2>
                     <p class="position">Head Web Design and Development Editor + Software
                         Engineer<br><span>September 2021 - January 2024</span></p>
-                    <ul className="resume-list">
-                        <li>Led 20 developers, oversaw project timelines, ran meetings, and managed product
-                            development to serve 50k+ weekly readers.</li>
+                    <ul class="resume-list">
+                        <li>Led 20 developers, oversaw project timelines, drove meetings, and managed product
+                            development to serve 5k+ monthly users.</li>
                         <li>Built three full-stack web-apps, iOS mobile app features, and 10+ web projects that
                             support subscriptions and editorial content.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://www.dailyprincetonian.com/">
-                        <img style="width: 80%" src="images/daily-princetonian.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://www.dailyprincetonian.com/">
+                        <img src="images/daily-princetonian.png" alt="The Daily Princetonian">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="princeton-cs"></span>
-            <div class="row experience">
+            <div id="princeton-cs" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>Princeton University Department of Computer
                             Science</span></h2>
-                    <p class="position">Head Lab Teaching Assistant <br><span>September 2021 - January 2024</span>
-                    </p>
-                    <ul className="resume-list">
+                    <p class="position">Head Lab Teaching Assistant - Algorithms &amp; Data Structures, Programming
+                        Systems, Intro to CS<br><span>September 2021 - January 2024</span></p>
+                    <ul class="resume-list">
                         <li>Managed 60+ teaching assistants across 3 computer science courses, setting expectations,
                             and communicating with professors.</li>
                         <li>Helped 300+ students debug their Java and C assignment code and answer algorithm design,
@@ -471,39 +458,17 @@
                             collected via custom Python scripts.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://www.cs.princeton.edu/">
-                        <img style="width: 80%" src="images/princeton.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://www.cs.princeton.edu/">
+                        <img src="images/princeton.png" alt="Princeton University">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="princeton-cdh"></span>
-            <div class="row experience">
-                <div class="col-lg-9 col-sm-12 ">
-                    <h2 class="text" style="text-align: left"><span>Princeton Center for Digital Humanities</span>
-                    </h2>
-                    <p class="position">Optical Character Recognition Researcher<br><span>March 2023 -
-                            May 2024</span>
-                    </p>
-                    <ul className="resume-list">
-                        <li>Translated the qualitative research goals of a non-technical professor into the design of a
-                            custom text extraction system.</li>
-                        <li>Built an end-to-end computer vision solution enabling historians to transcribe, tabulate,
-                            and analyze logbook data in seconds.</li>
-                    </ul>
-                </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://cdh.princeton.edu/">
-                        <img style="width: 60%" src="images/center-digital-humanities.png">
-                    </a>
-                </div>
-            </div>
-            <span class="nav-link" id="pupil"></span>
-            <div class="row experience">
+            <div id="pupil" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>Pupil</span></h2>
                     <p class="position">Software Engineer <br><span>May 2022 - October 2022</span></p>
-                    <ul className="resume-list">
+                    <ul class="resume-list">
                         <li>Worked in a team of 5 to build the MVP of a full stack Next.js React app (using MongoDB)
                             that
                             matches students with mentors.</li>
@@ -513,18 +478,17 @@
                             front and backend components.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://www.getpupil.com/">
-                        <img style="width: 80%" src="images/pupil.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://www.getpupil.com/">
+                        <img src="images/pupil.png" alt="Pupil">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="borderless-exp"></span>
-            <div class="row experience">
+            <div id="borderless-exp" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>Borderless</span></h2>
                     <p class="position">App Development Intern <br><span>December 2021 - January 2022</span></p>
-                    <ul className="resume-list">
+                    <ul class="resume-list">
                         <li>Built the company a complete and robust REST API Documentation from scratch in
                             accordance
                             with
@@ -537,49 +501,46 @@
                             settings.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://getborderless.com/">
-                        <img style="width: 80%" src="images/borderless.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://getborderless.com/">
+                        <img src="images/borderless.png" alt="Borderless">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="rentcheck-exp"></span>
-            <div class="row experience">
+            <div id="rentcheck-exp" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>RentCheck</span></h2>
                     <p class="position">Software Development Intern <br><span>November 2021 - January 2022</span>
                     </p>
-                    <ul className="resume-list">
+                    <ul class="resume-list">
                         <li>Built a new Sign Up feature on the company’s web application. Gained experience using
                             Agile Software Development.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://www.getrentcheck.com/">
-                        <img style="width: 80%" src="images/rentcheck.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://www.getrentcheck.com/">
+                        <img src="images/rentcheck.png" alt="RentCheck">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="shreya-dixit"></span>
-            <div class="row experience">
+            <div id="shreya-dixit" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>The Shreya Dixit Memorial Foundation</span>
                     </h2>
                     <p class="position">Marketing Committee Leader <br><span>June 2021 - August 2022</span></p>
-                    <ul className="resume-list">
+                    <ul class="resume-list">
                         <li>Led, developed, and implemented a six-week plan for the marketing division of the
                             internship
                             program.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://shreyadixit.org/">
-                        <img style="width: 40%" src="images/shreya-dixit.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://shreyadixit.org/">
+                        <img class="logo-sm" src="images/shreya-dixit.png" alt="The Shreya Dixit Memorial Foundation">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="leadership-nav"></span>
-            <h1 id="leadership">Leadership</h1>
+            <h1 id="leadership-nav">Leadership</h1>
 
             <div class="sub-nav">
                 <a href="#princeton">Princeton University</a>
@@ -587,12 +548,11 @@
                 <a href="#club-swimming">Princeton Club Swimming</a>
                 <a href="#mathey-college">Mathey College</a>
             </div>
-            <span class="nav-link" id="princeton"></span>
-            <div class="row experience" style="margin-top: 50px;">
+            <div id="princeton" class="row experience" style="margin-top: 50px;">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>Princeton University</span></h2>
-                    <p class="position">Residential College Advisor<br><span>August 2022 - May 2024</span></p>
-                    <ul className="resume-list">
+                    <p class="position">Resident Advisor - Mathey College<br><span>August 2022 - May 2024</span></p>
+                    <ul class="resume-list">
                         <li>Mentored, advised, performed conflict resolution, built community, and planned
                             activities for a group of 20 first-year students.</li>
                         <li>Encouraged holistic personal development and promoted safety, citizenship, health and
@@ -602,71 +562,99 @@
                         </li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://www.princeton.edu/">
-                        <img style="width: 80%" src="images/princeton.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://www.princeton.edu/">
+                        <img src="images/princeton.png" alt="Princeton University">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="matriculate"></span>
-            <div class="row experience">
+            <div id="matriculate" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>Matriculate</span></h2>
                     <p class="position">Advising Fellow<br><span>January 2022 - August 2023</span></p>
-                    <ul className="resume-list">
-                        <li>Mentored three high achieving low-income high school students and help them achieve
-                            success in the college admissions process.</li>
+                    <ul class="resume-list">
+                        <li>Advised and revised essays for three high-achieving low-income high school students during
+                            the college admissions process.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://www.matriculate.org/">
-                        <img style="width: 80%" src="images/matriculate.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://www.matriculate.org/">
+                        <img src="images/matriculate.png" alt="Matriculate">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="club-swimming"></span>
-            <div class="row experience">
+            <div id="club-swimming" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>Princeton Club Swimming</span></h2>
                     <p class="position">Captain<br><span>January 2020 - January 2022</span></p>
-                    <ul className="resume-list">
+                    <ul class="resume-list">
                         <li>Redesigned the weekly workout writing process to prioritize creating practices that
                             appeal to swimmers of all abilities.</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://clubswim.princeton.edu/">
-                        <img style="width: 80%" src="images/club-swim.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://clubswim.princeton.edu/">
+                        <img src="images/club-swim.png" alt="Princeton Club Swimming">
                     </a>
                 </div>
             </div>
-            <span class="nav-link" id="mathey-college"></span>
-            <div class="row experience">
+            <div id="mathey-college" class="row experience">
                 <div class="col-lg-9 col-sm-12 ">
                     <h2 class="text" style="text-align: left"><span>Mathey College Council</span></h2>
                     <p class="position">Council Chair<br><span>September 2020 - May 2022</span></p>
-                    <ul className="resume-list">
-                        <li>Conducted bi-weekly council meetings, delegate tasks to council members, and plan study
+                    <ul class="resume-list">
+                        <li>Conducted bi-weekly council meetings, delegated tasks to council members, and planned study
                             breaks for over 400 students</li>
                     </ul>
                 </div>
-                <div class="image col-lg-3 col-sm-0 align-self-center">
-                    <a target="_blank" href="https://matheycollege.princeton.edu/">
-                        <img style="width: 25%" src="images/mathey-college.png">
+                <div class="image col-lg-3 d-none d-lg-block align-self-center">
+                    <a target="_blank" rel="noopener" href="https://matheycollege.princeton.edu/">
+                        <img class="logo-xs" src="images/mathey-college.png" alt="Mathey College">
                     </a>
                 </div>
             </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <p class="credit">Web Design by Brett Zeligson</p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
     </main>
+
+    <footer>
+        <p class="credit">Web Design by Brett Zeligson</p>
+    </footer>
+
+    <script>
+        (function () {
+            var navbar = document.getElementById("navbar");
+            var links = navbar.querySelectorAll(".link");
+
+            function updateNav() {
+                var scrolled = window.scrollY >= window.innerHeight - 300;
+                navbar.classList.toggle("scrolled-down", scrolled);
+                for (var i = 0; i < links.length; i++) {
+                    links[i].classList.toggle("scrolled-down-a", scrolled);
+                }
+            }
+
+            window.addEventListener("scroll", updateNav, { passive: true });
+            window.addEventListener("resize", updateNav);
+            updateNav();
+        })();
+        (function () {
+            var nav = document.getElementById("mobile-nav");
+            var toggle = document.getElementById("menu-toggle");
+            var menu = document.getElementById("mobile-links");
+
+            function setOpen(open) {
+                nav.classList.toggle("open", open);
+                toggle.setAttribute("aria-expanded", String(open));
+                toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+            }
+
+            toggle.addEventListener("click", function () {
+                setOpen(!nav.classList.contains("open"));
+            });
+            menu.addEventListener("click", function (e) {
+                if (e.target.closest("a")) setOpen(false);
+            });
+        })();
+    </script>
 </body>
 
 </html>

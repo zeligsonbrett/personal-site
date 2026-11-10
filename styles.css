@@ -1,68 +1,141 @@
 :root {
     --primary: #e63946;
-    --s: #6ab8ba;
-    --t: #457b9d;
-    --white: #ffffff;
+    --teal: #6ab8ba;
+    --blue: #457b9d;
     --hover: #bee9e8;
+    --gutter: 5vw;
+    --text: clamp(16px, 1.5vw, 21px);
+    --subhead: clamp(22px, 2vw, 28px);
+    --heading: clamp(28px, 3vw, 42px);
+    --chip: clamp(15px, 1.2vw, 17px);
 }
 
 html {
     scroll-behavior: smooth;
-    width: 100%;
 }
 
 body {
     background-color: white;
     margin: 0;
     padding: 0;
-    width: 90%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
     height: 110vh;
-    background-image: url("images/background.jpeg");
-    background-size: 100%;
     margin: 0;
-    width: 100vw;
+    background-image: url("images/background-2000.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .header h4 {
-    padding: 0;
-    margin: 0;
-    font-size: 12vw;
-    color: white;
     position: absolute;
     bottom: 40px;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-size: 12vw;
+    color: white;
 }
 
 section {
     background-color: white;
     box-shadow: 0 0 50px 70px white;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
     margin-top: -5vw;
-    width: 100vw;
+}
+
+main {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
 }
 
 h1 {
     font-size: 6vw;
 }
 
+#about-me-nav,
+#education-nav,
+#projects-nav,
+#experience-nav,
+#leadership-nav {
+    font-size: var(--heading);
+    color: #14213D;
+    font-weight: bolder;
+}
+
+#about-me-nav,
+#projects-nav,
+#experience-nav,
+#leadership-nav {
+    margin-bottom: 40px;
+}
+
 p {
-    font-size: 2vw;
+    font-size: var(--text);
     margin-top: -1vw;
+}
+
+.text {
+    font-size: var(--text);
+    text-align: right;
+}
+
+.text span {
+    font-size: var(--subhead);
+    font-weight: bolder;
+}
+
+ul li {
+    margin-bottom: 2px;
+}
+
+.resume-list {
+    font-size: var(--text);
+}
+
+.course-list li {
+    margin-bottom: 0;
+}
+
+.position {
+    color: var(--blue);
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.text + .position {
+    margin-top: 0.5rem;
+}
+
+.resume-list + .position {
+    margin-top: 2rem;
+}
+
+.position span {
+    font-size: 1em;
+    color: var(--teal);
+}
+
+.minors {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 1.5vw;
+}
+
+.credit {
+    text-align: center;
+    margin: 90px 0 30px;
+    font-weight: bolder;
+    font-size: var(--text);
 }
 
 nav {
     position: fixed;
-    top: 0px;
-    right: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    top: 0;
+    right: 0;
+    padding: 10px;
     text-align: left;
     width: 100%;
     transition: ease 0.3s;
@@ -78,38 +151,30 @@ nav span a {
 }
 
 nav a {
-    height: 10px;
     padding-right: 10px;
     padding-left: 10px;
     color: black;
     font-size: 1.5vw;
     text-decoration: none;
     transition: ease 0.2s;
-    width: 105;
 }
 
-nav a:hover {
-    cursor: pointer;
-    transition: ease 0.2s;
-}
-
-.nav-link {
-    position: relative;
-    top: -80px;
+#navbar a:hover,
+#mobile-nav a:hover {
+    color: var(--hover);
 }
 
 .scrolled-down {
     background-color: var(--primary);
-    transition: ease 0.3s;
 }
 
 .scrolled-down-a {
     color: white;
 }
 
-main {
-    width: 95vw;
-    padding-left: 5vw;
+main [id],
+section [id] {
+    scroll-margin-top: calc(2.25vw + 36px);
 }
 
 .row {
@@ -124,146 +189,59 @@ main {
     text-align: center;
 }
 
-h2 .h2 .subtitile {
-    color: var(--s);
+.image img {
+    width: 80%;
 }
 
-.subtitile {
-    color: var(--s);
+.image .logo-md {
+    width: 60%;
 }
 
-#navbar a:hover,
-#mobile-nav a:hover {
-    color: var(--hover);
+.image .logo-sm {
+    width: 40%;
 }
 
-#about-me,
-#education,
-#projects,
-#experience,
-#leadership {
-    font-size: 3vw;
-    color: #14213D;
-    font-weight: bolder;
+.image .logo-xs {
+    width: 25%;
 }
 
-p {
-    font-size: 1.5vw;
-}
-
-.col a svg {
-    background-color: rgb(212, 212, 244);
-    height: 6vw;
-    width: 6vw;
-    padding: 10px;
-    border-style: solid;
-    margin-bottom: 20px;
-    border-width: 0;
-    border-radius: 10px;
-}
-
-.text {
-    font-size: 1.5vw;
-    text-align: right;
-}
-
-.text span {
-    font-size: 2vw;
-    font-weight: bolder;
-}
-
-ul li {
-    margin-bottom: 2px;
-}
-
-li span {
-    color: blue;
-    font-weight: 800;
-    letter-spacing: -5px;
-    margin-right: 9px;
+.project-cat span {
+    position: relative;
+    top: -10px;
 }
 
 .link-btn {
     text-decoration: none;
-    display: inline-block;
-    background-color: var(--t);
+    display: block;
+    text-align: center;
+    background-color: var(--blue);
     color: white;
+    font-size: var(--chip);
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 20px;
-    width: 100%;
-    transition: ease-in-out 0.5s;
+    transition: background-color 0.5s ease-in-out;
 }
 
-.link-btn:hover {
+.link-btn:hover,
+.link-btn:focus {
     color: white;
-    background-color: var(--s);
-    transition: ease-in-out 0.5s;
-}
-
-.position {
-    color: var(--t);
-    font-weight: bolder;
-    font-size: 1.3em;
-}
-
-.position span {
-    font-size: 1em;
-    color: var(--s);
-}
-
-.grad {
-    font-size: 1.2em;
-    font-weight: 600;
-    color: var(--s);
-}
-
-.minors {
-    font-size: 1.2em;
-}
-
-.credit {
-    width: 100%;
-    text-align: center;
-    margin: 30px;
-    margin-top: 90px;
-    font-weight: bolder;
-    font-size: 1.5vw;
-}
-
-.course-list li {
-    margin-bottom: 0px;
-    padding-top: -20px;
-}
-
-.dropdown-toggle::after {
-    display: inline-block;
-    color: green;
-}
-
-.resume-list {
-    font-size: 1.5vw;
-}
-
-#mobile-nav {
-    display: none;
+    background-color: var(--teal);
 }
 
 .sub-nav {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    color: var(--t);
-    font-size: 1.25vw;
     flex-wrap: wrap;
-    color: black;
-    width: 100%;
+    gap: 10px;
+    font-size: var(--chip);
     margin-top: -30px;
 }
 
 .sub-nav a {
     background-color: var(--hover);
-    padding: 8px;
+    padding: 6px 12px;
+    border-radius: 5px;
     text-decoration: none;
     color: black;
     transition: ease 0.6s;
@@ -271,150 +249,175 @@ li span {
 
 .sub-nav a:hover {
     background-color: var(--primary);
-    padding: 8px;
-    text-decoration: none;
     color: white;
-    transition: ease 0.6s;
 }
 
-#about-me,
-#projects,
-#experience,
-#leadership {
-    margin-bottom: 40px;
+#mobile-nav {
+    display: none;
 }
 
 @media screen and (max-width: 1000px) {
     .text {
         text-align: left;
-        padding-top: 0px;
+        padding-top: 0;
     }
 
-    .text span {
-        font-size: 2.5vw;
-    }
-
-    #about-me,
-    #projects,
-    #experience,
-    #leadership,
-    #education {
+    #about-me-nav,
+    #projects-nav,
+    #experience-nav,
+    #leadership-nav,
+    #education-nav {
         margin-bottom: 20px;
-        font-size: 5vw;
     }
 
-    #education {
+    #education-nav {
         margin-bottom: 10px;
     }
 
     .sub-nav {
-        font-size: 2vw;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
-    img {
-        display: none;
-    }
-
-    p {
-        font-size: 2.5vw;
-    }
-
-    nav {
+    #navbar {
         display: none;
     }
 
     #mobile-nav {
-        display: flex;
-        flex-direction: column;
+        display: block;
         position: fixed;
-        width: fit-content;
+        width: auto;
         top: 0;
         right: 0;
+        left: auto;
         margin: 0;
         padding: 0;
         text-align: right;
-        background-color: var(--primary);
     }
 
-    #mobile-nav span {
-        font-size: 5vh;
-        line-height: 5vh;
-        color: white;
+    #menu-toggle {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin-left: auto;
         padding: 0;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-    }
-
-    #mobile-nav span:hover {
+        border: 0;
+        background-color: var(--primary);
         cursor: pointer;
     }
 
-    .mobile-links-hide {
-        display: none;
-        transition: ease 0.4s;
+    #menu-toggle span {
+        position: absolute;
+        left: 13px;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: white;
+        transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.2s ease;
     }
 
-    .mobile-links a {
-        color: white;
-        font-size: 2.5vw;
-        padding-left: 40px;
+    #menu-toggle span:nth-child(1) {
+        top: 16px;
     }
 
-    main {
-        padding: 20px;
-        margin-left: 20px;
-        margin-right: -40px;
-        overflow-y: hidden;
+    #menu-toggle span:nth-child(2) {
+        top: 23px;
     }
 
-    .resume-list {
-        font-size: 2.75vw;
-    }
-
-    h3 {
-        position: relative;
+    #menu-toggle span:nth-child(3) {
         top: 30px;
     }
 
-    body {
-        width: 90%;
+    #mobile-nav.open #menu-toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
     }
 
-    .text span {
-        font-size: 4vw;
+    #mobile-nav.open #menu-toggle span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
     }
 
-    .nav-link {
-        position: relative;
-        top: -30px;
+    #mobile-nav.open #menu-toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
     }
 
-    .credit {
-        font-size: 2.5vw;
+    .mobile-links {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 48px 0 1em;
+        white-space: nowrap;
+        isolation: isolate;
+        visibility: hidden;
+        transition: visibility 0s linear 0.35s;
+    }
+
+    .mobile-links::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background-color: var(--primary);
+        transform: scale(0);
+        transform-origin: top right;
+        will-change: transform;
+        transition: transform 0.3s cubic-bezier(0.55, 0, 0.45, 1) 0.05s;
+    }
+
+    #mobile-nav.open .mobile-links {
+        visibility: visible;
+        transition: visibility 0s;
+    }
+
+    #mobile-nav.open .mobile-links::before {
+        transform: none;
+        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .mobile-links a {
+        display: block;
+        color: white;
+        font-size: max(2.5vw, 16px);
+        padding: 2px 10px 2px 40px;
+        opacity: 0;
+        transform: translateX(16px);
+        transition: opacity 0.15s ease, transform 0.15s ease, color 0.2s ease;
+    }
+
+    #mobile-nav.open .mobile-links a {
+        opacity: 1;
+        transform: none;
+        transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s ease;
+    }
+
+    #mobile-nav.open .mobile-links a:nth-child(1) { transition-delay: 0.12s, 0.12s, 0s; }
+    #mobile-nav.open .mobile-links a:nth-child(2) { transition-delay: 0.16s, 0.16s, 0s; }
+    #mobile-nav.open .mobile-links a:nth-child(3) { transition-delay: 0.2s, 0.2s, 0s; }
+    #mobile-nav.open .mobile-links a:nth-child(4) { transition-delay: 0.24s, 0.24s, 0s; }
+    #mobile-nav.open .mobile-links a:nth-child(5) { transition-delay: 0.28s, 0.28s, 0s; }
+    #mobile-nav.open .mobile-links a:nth-child(6) { transition-delay: 0.32s, 0.32s, 0s; }
+    #mobile-nav.open .mobile-links a:nth-child(7) { transition-delay: 0.36s, 0.36s, 0s; }
+
+    .mobile-links .link-gap {
+        margin-bottom: 1em;
+    }
+
+    main [id],
+    section [id] {
+        scroll-margin-top: calc(5vh + 21px);
     }
 }
 
-
-@media screen and (max-width: 700px) {
-    .text span {
-        font-size: 5vw;
-    }
-
-    .credit {
-        font-size: 2vw;
-    }
-
-    p {
-        font-size: 3vw;
-    }
-
-    .project-cat {
-        line-height: 10vw;
+@media (prefers-reduced-motion: reduce) {
+    #mobile-nav *,
+    #mobile-nav .mobile-links,
+    #mobile-nav .mobile-links::before,
+    #mobile-nav .mobile-links a {
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
     }
 }
-
 
 @media screen and (max-width: 900px) {
     .header {
@@ -426,5 +429,10 @@ li span {
         color: black;
         padding-top: 20px;
     }
+}
 
+@media screen and (max-width: 700px) {
+    .project-cat {
+        line-height: 10vw;
+    }
 }
