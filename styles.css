@@ -55,21 +55,30 @@ h1 {
     font-size: 6vw;
 }
 
-#about-me-nav,
-#education-nav,
-#projects-nav,
-#experience-nav,
-#leadership-nav {
+.section-title {
     font-size: var(--heading);
     color: #14213D;
     font-weight: bolder;
 }
 
-#about-me-nav,
-#projects-nav,
-#experience-nav,
-#leadership-nav {
-    margin-bottom: 40px;
+.section-head {
+    position: sticky;
+    top: var(--nav-h, 0px);
+    z-index: 10;
+    background-color: white;
+    padding: 12px 0;
+}
+
+.section-head .section-title {
+    margin: 0;
+}
+
+.section-head + p {
+    margin-top: 12px;
+}
+
+.section-head .sub-nav {
+    margin-top: 12px;
 }
 
 p {
@@ -172,9 +181,12 @@ nav a {
     color: white;
 }
 
-main [id],
-section [id] {
-    scroll-margin-top: calc(2.25vw + 36px);
+main [id] {
+    scroll-margin-top: calc(var(--nav-h, 0px) + var(--head-h, 0px) + 10px);
+}
+
+.page-section[id] {
+    scroll-margin-top: var(--nav-h, 0px);
 }
 
 .row {
@@ -231,14 +243,17 @@ section [id] {
 
 .sub-nav {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
     font-size: var(--chip);
-    margin-top: -30px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    overscroll-behavior-x: contain;
 }
 
 .sub-nav a {
+    flex: none;
+    white-space: nowrap;
     background-color: var(--hover);
     padding: 6px 12px;
     border-radius: 5px;
@@ -260,22 +275,6 @@ section [id] {
     .text {
         text-align: left;
         padding-top: 0;
-    }
-
-    #about-me-nav,
-    #projects-nav,
-    #experience-nav,
-    #leadership-nav,
-    #education-nav {
-        margin-bottom: 20px;
-    }
-
-    #education-nav {
-        margin-bottom: 10px;
-    }
-
-    .sub-nav {
-        margin-top: 0;
     }
 
     #navbar {
@@ -401,11 +400,6 @@ section [id] {
 
     .mobile-links .link-gap {
         margin-bottom: 1em;
-    }
-
-    main [id],
-    section [id] {
-        scroll-margin-top: calc(5vh + 21px);
     }
 }
 
