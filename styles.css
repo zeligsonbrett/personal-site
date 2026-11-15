@@ -134,6 +134,12 @@ ul li {
     margin-bottom: 1.5vw;
 }
 
+@media (min-width: 992px) {
+    .minors {
+        white-space: nowrap;
+    }
+}
+
 .credit {
     text-align: center;
     margin: 90px 0 30px;
